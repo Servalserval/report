@@ -7,5 +7,5 @@ if __name__ == "__main__":
         print("See the 'descriptions' folder for details")
     conf = sys.argv[1]
 
-    if conf == "binance_data":
+    if conf == "fetch_binance_data":
         fetch_binance_data()
