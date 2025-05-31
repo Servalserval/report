@@ -1,4 +1,4 @@
-from include.fetch_binance_data import fetch_binance_data
+from include import *
 import sys
 
 if __name__ == "__main__":
@@ -9,3 +9,7 @@ if __name__ == "__main__":
 
     if conf == "fetch_binance_data":
         fetch_binance_data()
+    
+    if conf == "fetch_deribit_history_options_list":
+        fetch_deribit_history_options_list()
+    

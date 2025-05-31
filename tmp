@@ -1,0 +1,813 @@
+{
+    "status": 200,
+    "title": "OK",
+    "description": "Successful request",
+    "payload": {
+        "metadata": {
+            "next": "https://api.amberdata.com/markets/options/tickers/information?cursor=N4IgpgHgxgFghgOwOZhALhAEzAJwJYBGeALiADQh4JQA2ArtgJIJxTF4BuqaxOdYFKrQZgAqggDOdAA7SA9jmJhMAUWjxkYCegBmcGhIEh2AWzAAxBSbikMJvDRp5DUOQkzaKOqzfQgAVhJu5CDScCjoAIwUEngAXtyRAAxJAL5AA",
+            "api-version": "2023-09-30"
+        },
+        "data": [
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-480-C",
+                "underlying": "BNB",
+                "startDate": 1744099925778,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-480-P",
+                "underlying": "BNB",
+                "startDate": 1744099925778,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-490-C",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-490-P",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-500-C",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-500-P",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-510-C",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-510-P",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-520-C",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-520-P",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-525-C",
+                "underlying": "BNB",
+                "startDate": 1744174321410,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-525-P",
+                "underlying": "BNB",
+                "startDate": 1744174321410,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-530-C",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-530-P",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-535-C",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-535-P",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-540-C",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-540-P",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-545-C",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-545-P",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-550-C",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-550-P",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-555-C",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-555-P",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-560-C",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-560-P",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-565-C",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-565-P",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-570-C",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-570-P",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-575-C",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-575-P",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-580-C",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-580-P",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-585-C",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271995718,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-585-P",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271995718,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-590-C",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-590-P",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-595-C",
+                "underlying": "BNB",
+                "startDate": 1744234321634,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-595-P",
+                "underlying": "BNB",
+                "startDate": 1744234321634,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-600-C",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-600-P",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-610-C",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-610-P",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-620-C",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-620-P",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-630-C",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-630-P",
+                "underlying": "BNB",
+                "startDate": 1744099622580,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-640-C",
+                "underlying": "BNB",
+                "startDate": 1744113904984,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10APR25-640-P",
+                "underlying": "BNB",
+                "startDate": 1744113904984,
+                "endDate": 1744271997732,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-620-C",
+                "underlying": "BNB",
+                "startDate": 1733783221979,
+                "endDate": 1733817594186,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-620-P",
+                "underlying": "BNB",
+                "startDate": 1733783221979,
+                "endDate": 1733817592180,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-630-C",
+                "underlying": "BNB",
+                "startDate": 1733651821710,
+                "endDate": 1733817594186,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-630-P",
+                "underlying": "BNB",
+                "startDate": 1733651821710,
+                "endDate": 1733817592180,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-640-C",
+                "underlying": "BNB",
+                "startDate": 1733645522378,
+                "endDate": 1733817594186,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-640-P",
+                "underlying": "BNB",
+                "startDate": 1733645522378,
+                "endDate": 1733817592180,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-645-C",
+                "underlying": "BNB",
+                "startDate": 1733783221979,
+                "endDate": 1733817594186,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-645-P",
+                "underlying": "BNB",
+                "startDate": 1733783221979,
+                "endDate": 1733817594751,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-650-C",
+                "underlying": "BNB",
+                "startDate": 1733645098414,
+                "endDate": 1733817594186,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-650-P",
+                "underlying": "BNB",
+                "startDate": 1733645098414,
+                "endDate": 1733817592180,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-660-C",
+                "underlying": "BNB",
+                "startDate": 1733645098414,
+                "endDate": 1733817594186,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-660-P",
+                "underlying": "BNB",
+                "startDate": 1733645098414,
+                "endDate": 1733817592180,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-670-C",
+                "underlying": "BNB",
+                "startDate": 1733645098414,
+                "endDate": 1733817594186,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-670-P",
+                "underlying": "BNB",
+                "startDate": 1733645098414,
+                "endDate": 1733817592180,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-680-C",
+                "underlying": "BNB",
+                "startDate": 1733645098414,
+                "endDate": 1733817594186,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-680-P",
+                "underlying": "BNB",
+                "startDate": 1733645096400,
+                "endDate": 1733817592180,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-685-C",
+                "underlying": "BNB",
+                "startDate": 1733791620569,
+                "endDate": 1733817594186,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-685-P",
+                "underlying": "BNB",
+                "startDate": 1733791620569,
+                "endDate": 1733817592180,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-690-C",
+                "underlying": "BNB",
+                "startDate": 1733645098414,
+                "endDate": 1733817594186,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-690-P",
+                "underlying": "BNB",
+                "startDate": 1733645096400,
+                "endDate": 1733817592180,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-695-C",
+                "underlying": "BNB",
+                "startDate": 1733724722490,
+                "endDate": 1733817592180,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-695-P",
+                "underlying": "BNB",
+                "startDate": 1733724722490,
+                "endDate": 1733817594186,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-700-C",
+                "underlying": "BNB",
+                "startDate": 1733645098414,
+                "endDate": 1733817592180,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-700-P",
+                "underlying": "BNB",
+                "startDate": 1733645095393,
+                "endDate": 1733817594186,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-705-C",
+                "underlying": "BNB",
+                "startDate": 1733659921461,
+                "endDate": 1733817592180,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-705-P",
+                "underlying": "BNB",
+                "startDate": 1733659921461,
+                "endDate": 1733817594186,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-710-C",
+                "underlying": "BNB",
+                "startDate": 1733645094386,
+                "endDate": 1733817592180,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-710-P",
+                "underlying": "BNB",
+                "startDate": 1733645095393,
+                "endDate": 1733817594186,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-715-C",
+                "underlying": "BNB",
+                "startDate": 1733645095393,
+                "endDate": 1733817592180,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-715-P",
+                "underlying": "BNB",
+                "startDate": 1733645094386,
+                "endDate": 1733817594186,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-720-C",
+                "underlying": "BNB",
+                "startDate": 1733645095393,
+                "endDate": 1733817592180,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-720-P",
+                "underlying": "BNB",
+                "startDate": 1733645094386,
+                "endDate": 1733817594186,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-725-C",
+                "underlying": "BNB",
+                "startDate": 1733645095393,
+                "endDate": 1733817592180,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-725-P",
+                "underlying": "BNB",
+                "startDate": 1733645094386,
+                "endDate": 1733817594186,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-730-C",
+                "underlying": "BNB",
+                "startDate": 1733645095393,
+                "endDate": 1733817592180,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-730-P",
+                "underlying": "BNB",
+                "startDate": 1733645094386,
+                "endDate": 1733817594186,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-735-C",
+                "underlying": "BNB",
+                "startDate": 1733645095393,
+                "endDate": 1733817592180,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-735-P",
+                "underlying": "BNB",
+                "startDate": 1733645098414,
+                "endDate": 1733817594186,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-740-C",
+                "underlying": "BNB",
+                "startDate": 1733645095393,
+                "endDate": 1733817592180,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-740-P",
+                "underlying": "BNB",
+                "startDate": 1733645098414,
+                "endDate": 1733817594186,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-745-C",
+                "underlying": "BNB",
+                "startDate": 1733645096400,
+                "endDate": 1733817597751,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-745-P",
+                "underlying": "BNB",
+                "startDate": 1733645098414,
+                "endDate": 1733817594186,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-750-C",
+                "underlying": "BNB",
+                "startDate": 1733645094386,
+                "endDate": 1733817592180,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-750-P",
+                "underlying": "BNB",
+                "startDate": 1733645096400,
+                "endDate": 1733817594186,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-755-C",
+                "underlying": "BNB",
+                "startDate": 1733645094386,
+                "endDate": 1733817592180,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-755-P",
+                "underlying": "BNB",
+                "startDate": 1733645095393,
+                "endDate": 1733817594186,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-760-C",
+                "underlying": "BNB",
+                "startDate": 1733645098414,
+                "endDate": 1733817592180,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-760-P",
+                "underlying": "BNB",
+                "startDate": 1733645095393,
+                "endDate": 1733817594186,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-765-C",
+                "underlying": "BNB",
+                "startDate": 1733645094386,
+                "endDate": 1733817594751,
+                "active": false
+            },
+            {
+                "exchange": "deribit",
+                "instrument": "BNB_USDC-10DEC24-765-P",
+                "underlying": "BNB",
+                "startDate": 1733645095393,
+                "endDate": 1733817594186,
+                "active": false
+            }
+        ]
+    }
+}
