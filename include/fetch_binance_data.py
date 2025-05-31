@@ -8,6 +8,9 @@ UNIX_2022_01_01 = 1640966400 * 1000
 UNIX_2025_01_01 = 1735660800 * 1000
 
 def fetch_binance_data():
+    """
+    Fetch the historical ohlcv of Binance 
+    """
     exchange = ccxt.binance()
     symbol = 'BTC/USDT'
     timeframe = '5m'

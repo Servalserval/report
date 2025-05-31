@@ -1,813 +1,106 @@
-{
-    "status": 200,
-    "title": "OK",
-    "description": "Successful request",
-    "payload": {
-        "metadata": {
-            "next": "https://api.amberdata.com/markets/options/tickers/information?cursor=N4IgpgHgxgFghgOwOZhALhAEzAJwJYBGeALiADQh4JQA2ArtgJIJxTF4BuqaxOdYFKrQZgAqggDOdAA7SA9jmJhMAUWjxkYCegBmcGhIEh2AWzAAxBSbikMJvDRp5DUOQkzaKOqzfQgAVhJu5CDScCjoAIwUEngAXtyRAAxJAL5AA",
-            "api-version": "2023-09-30"
-        },
-        "data": [
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-480-C",
-                "underlying": "BNB",
-                "startDate": 1744099925778,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-480-P",
-                "underlying": "BNB",
-                "startDate": 1744099925778,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-490-C",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-490-P",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-500-C",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-500-P",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-510-C",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-510-P",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-520-C",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-520-P",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-525-C",
-                "underlying": "BNB",
-                "startDate": 1744174321410,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-525-P",
-                "underlying": "BNB",
-                "startDate": 1744174321410,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-530-C",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-530-P",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-535-C",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-535-P",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-540-C",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-540-P",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-545-C",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-545-P",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-550-C",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-550-P",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-555-C",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-555-P",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-560-C",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-560-P",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-565-C",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-565-P",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-570-C",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-570-P",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-575-C",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-575-P",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-580-C",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-580-P",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-585-C",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271995718,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-585-P",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271995718,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-590-C",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-590-P",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-595-C",
-                "underlying": "BNB",
-                "startDate": 1744234321634,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-595-P",
-                "underlying": "BNB",
-                "startDate": 1744234321634,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-600-C",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-600-P",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-610-C",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-610-P",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-620-C",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-620-P",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-630-C",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-630-P",
-                "underlying": "BNB",
-                "startDate": 1744099622580,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-640-C",
-                "underlying": "BNB",
-                "startDate": 1744113904984,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10APR25-640-P",
-                "underlying": "BNB",
-                "startDate": 1744113904984,
-                "endDate": 1744271997732,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-620-C",
-                "underlying": "BNB",
-                "startDate": 1733783221979,
-                "endDate": 1733817594186,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-620-P",
-                "underlying": "BNB",
-                "startDate": 1733783221979,
-                "endDate": 1733817592180,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-630-C",
-                "underlying": "BNB",
-                "startDate": 1733651821710,
-                "endDate": 1733817594186,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-630-P",
-                "underlying": "BNB",
-                "startDate": 1733651821710,
-                "endDate": 1733817592180,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-640-C",
-                "underlying": "BNB",
-                "startDate": 1733645522378,
-                "endDate": 1733817594186,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-640-P",
-                "underlying": "BNB",
-                "startDate": 1733645522378,
-                "endDate": 1733817592180,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-645-C",
-                "underlying": "BNB",
-                "startDate": 1733783221979,
-                "endDate": 1733817594186,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-645-P",
-                "underlying": "BNB",
-                "startDate": 1733783221979,
-                "endDate": 1733817594751,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-650-C",
-                "underlying": "BNB",
-                "startDate": 1733645098414,
-                "endDate": 1733817594186,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-650-P",
-                "underlying": "BNB",
-                "startDate": 1733645098414,
-                "endDate": 1733817592180,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-660-C",
-                "underlying": "BNB",
-                "startDate": 1733645098414,
-                "endDate": 1733817594186,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-660-P",
-                "underlying": "BNB",
-                "startDate": 1733645098414,
-                "endDate": 1733817592180,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-670-C",
-                "underlying": "BNB",
-                "startDate": 1733645098414,
-                "endDate": 1733817594186,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-670-P",
-                "underlying": "BNB",
-                "startDate": 1733645098414,
-                "endDate": 1733817592180,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-680-C",
-                "underlying": "BNB",
-                "startDate": 1733645098414,
-                "endDate": 1733817594186,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-680-P",
-                "underlying": "BNB",
-                "startDate": 1733645096400,
-                "endDate": 1733817592180,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-685-C",
-                "underlying": "BNB",
-                "startDate": 1733791620569,
-                "endDate": 1733817594186,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-685-P",
-                "underlying": "BNB",
-                "startDate": 1733791620569,
-                "endDate": 1733817592180,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-690-C",
-                "underlying": "BNB",
-                "startDate": 1733645098414,
-                "endDate": 1733817594186,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-690-P",
-                "underlying": "BNB",
-                "startDate": 1733645096400,
-                "endDate": 1733817592180,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-695-C",
-                "underlying": "BNB",
-                "startDate": 1733724722490,
-                "endDate": 1733817592180,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-695-P",
-                "underlying": "BNB",
-                "startDate": 1733724722490,
-                "endDate": 1733817594186,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-700-C",
-                "underlying": "BNB",
-                "startDate": 1733645098414,
-                "endDate": 1733817592180,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-700-P",
-                "underlying": "BNB",
-                "startDate": 1733645095393,
-                "endDate": 1733817594186,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-705-C",
-                "underlying": "BNB",
-                "startDate": 1733659921461,
-                "endDate": 1733817592180,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-705-P",
-                "underlying": "BNB",
-                "startDate": 1733659921461,
-                "endDate": 1733817594186,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-710-C",
-                "underlying": "BNB",
-                "startDate": 1733645094386,
-                "endDate": 1733817592180,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-710-P",
-                "underlying": "BNB",
-                "startDate": 1733645095393,
-                "endDate": 1733817594186,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-715-C",
-                "underlying": "BNB",
-                "startDate": 1733645095393,
-                "endDate": 1733817592180,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-715-P",
-                "underlying": "BNB",
-                "startDate": 1733645094386,
-                "endDate": 1733817594186,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-720-C",
-                "underlying": "BNB",
-                "startDate": 1733645095393,
-                "endDate": 1733817592180,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-720-P",
-                "underlying": "BNB",
-                "startDate": 1733645094386,
-                "endDate": 1733817594186,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-725-C",
-                "underlying": "BNB",
-                "startDate": 1733645095393,
-                "endDate": 1733817592180,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-725-P",
-                "underlying": "BNB",
-                "startDate": 1733645094386,
-                "endDate": 1733817594186,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-730-C",
-                "underlying": "BNB",
-                "startDate": 1733645095393,
-                "endDate": 1733817592180,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-730-P",
-                "underlying": "BNB",
-                "startDate": 1733645094386,
-                "endDate": 1733817594186,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-735-C",
-                "underlying": "BNB",
-                "startDate": 1733645095393,
-                "endDate": 1733817592180,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-735-P",
-                "underlying": "BNB",
-                "startDate": 1733645098414,
-                "endDate": 1733817594186,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-740-C",
-                "underlying": "BNB",
-                "startDate": 1733645095393,
-                "endDate": 1733817592180,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-740-P",
-                "underlying": "BNB",
-                "startDate": 1733645098414,
-                "endDate": 1733817594186,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-745-C",
-                "underlying": "BNB",
-                "startDate": 1733645096400,
-                "endDate": 1733817597751,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-745-P",
-                "underlying": "BNB",
-                "startDate": 1733645098414,
-                "endDate": 1733817594186,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-750-C",
-                "underlying": "BNB",
-                "startDate": 1733645094386,
-                "endDate": 1733817592180,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-750-P",
-                "underlying": "BNB",
-                "startDate": 1733645096400,
-                "endDate": 1733817594186,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-755-C",
-                "underlying": "BNB",
-                "startDate": 1733645094386,
-                "endDate": 1733817592180,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-755-P",
-                "underlying": "BNB",
-                "startDate": 1733645095393,
-                "endDate": 1733817594186,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-760-C",
-                "underlying": "BNB",
-                "startDate": 1733645098414,
-                "endDate": 1733817592180,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-760-P",
-                "underlying": "BNB",
-                "startDate": 1733645095393,
-                "endDate": 1733817594186,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-765-C",
-                "underlying": "BNB",
-                "startDate": 1733645094386,
-                "endDate": 1733817594751,
-                "active": false
-            },
-            {
-                "exchange": "deribit",
-                "instrument": "BNB_USDC-10DEC24-765-P",
-                "underlying": "BNB",
-                "startDate": 1733645095393,
-                "endDate": 1733817594186,
-                "active": false
-            }
-        ]
-    }
-}
+{'BNB': 14676, 'BTC-10APR22': 28, 'BTC-10APR23': 28, 'BTC': 60223, 'BTC-10AUG22': 28, 'BTC-10DEC21': 72, 'BTC-10DEC22': 32, 'BTC-10FEB22': 32, 'BTC-10FEB23': 80, 
+'BTC-10JAN22': 26, 'BTC-10JAN23': 28, 'BTC-10JUL22': 26, 'BTC-10JUN22': 54, 'BTC-10MAR22': 30, 'BTC-10MAR23': 88, 'BTC-10MAY22': 24, 'BTC-10NOV22': 56, 'BTC-10OCT22': 26, 'BTC-10SEP22': 30, 'BTC-11APR22': 28, 'BTC-
+11AUG22': 26, 'BTC-11DEC21': 34, 'BTC-11DEC22': 30, 'BTC-11FEB22': 52, 'BTC-11FEB23': 42, 'BTC-11JAN22': 26, 'BTC-11JAN23': 30, 'BTC-11JUL22': 26, 'BTC-11JUN22': 30, 'BTC-11MAR22': 50, 'BTC-11MAR23': 58, 'BTC-11MAY
+22': 26, 'BTC-11NOV22': 72, 'BTC-11OCT22': 26, 'BTC-11SEP22': 28, 'BTC-12APR22': 28, 'BTC-12APR23': 40, 'BTC-12AUG22': 72, 'BTC-12DEC21': 36, 'BTC-12DEC22': 30, 'BTC-12FEB22': 30, 'BTC-12FEB23': 38, 'BTC-12JAN22': 
+30, 'BTC-12JAN23': 32, 'BTC-12JUL22': 24, 'BTC-12JUN22': 32, 'BTC-12MAR22': 26, 'BTC-12MAR23': 48, 'BTC-12MAY22': 22, 'BTC-12NOV22': 38, 'BTC-12OCT22': 30, 'BTC-12SEP22': 26, 'BTC-13APR22': 32, 'BTC-13APR23': 32, '
+BTC-13AUG22': 28, 'BTC-13DEC21': 32, 'BTC-13DEC22': 30, 'BTC-13FEB22': 30, 'BTC-13FEB23': 38, 'BTC-13JAN23': 62, 'BTC-13JUL22': 26, 'BTC-13JUN22': 34, 'BTC-13MAR22': 26, 'BTC-13MAR23': 74, 'BTC-13MAY22': 56, 'BTC-1
+3NOV22': 34, 'BTC-13OCT22': 28, 'BTC-13SEP22': 26, 'BTC-14APR22': 28, 'BTC-14APR23': 94, 'BTC-14AUG22': 28, 'BTC-14DEC21': 36, 'BTC-14DEC22': 32, 'BTC-14FEB22': 28, 'BTC-14FEB23': 38, 'BTC-14JAN22': 56, 'BTC-14JAN2
+3': 46, 'BTC-14JUL22': 22, 'BTC-14JUN22': 46, 'BTC-14MAR22': 24, 'BTC-14MAR23': 94, 'BTC-14MAY22': 26, 'BTC-14NOV22': 32, 'BTC-14OCT22': 58, 'BTC-14SEP22': 28, 'BTC-15APR22': 54, 'BTC-15APR23': 32, 'BTC-15AUG22': 2
+8, 'BTC-15DEC21': 34, 'BTC-15DEC22': 34, 'BTC-15FEB22': 28, 'BTC-15FEB23': 40, 'BTC-15JAN22': 30, 'BTC-15JAN23': 50, 'BTC-15JUL22': 62, 'BTC-15JUN22': 36, 'BTC-15MAR22': 24, 'BTC-15MAR23': 70, 'BTC-15MAY22': 22, 'B
+TC-15NOV22': 34, 'BTC-15OCT22': 32, 'BTC-15SEP22': 32, 'BTC-16APR22': 30, 'BTC-16APR23': 34, 'BTC-16AUG22': 28, 'BTC-16DEC21': 32, 'BTC-16DEC22': 54, 'BTC-16FEB22': 28, 'BTC-16FEB23': 56, 'BTC-16JAN22': 30, 'BTC-16
+JAN23': 38, 'BTC-16JUL22': 24, 'BTC-16JUN22': 32, 'BTC-16MAR22': 24, 'BTC-16MAR23': 50, 'BTC-16MAY22': 22, 'BTC-16NOV22': 32, 'BTC-16OCT22': 30, 'BTC-16SEP22': 64, 'BTC-17APR22': 26, 'BTC-17APR23': 32, 'BTC-17AUG22
+': 26, 'BTC-17DEC21': 68, 'BTC-17DEC22': 34, 'BTC-17FEB22': 30, 'BTC-17FEB23': 84, 'BTC-17JAN22': 30, 'BTC-17JAN23': 38, 'BTC-17JUL22': 22, 'BTC-17JUN22': 82, 'BTC-17MAR22': 32, 'BTC-17MAR23': 88, 'BTC-17MAY22': 22
+, 'BTC-17NOV22': 32, 'BTC-17OCT22': 30, 'BTC-17SEP22': 30, 'BTC-18APR22': 28, 'BTC-18APR23': 32, 'BTC-18AUG22': 26, 'BTC-18DEC21': 32, 'BTC-18DEC22': 34, 'BTC-18FEB22': 48, 'BTC-18FEB23': 48, 'BTC-18JAN22': 28, 'BT
+C-18JAN23': 38, 'BTC-18JUL22': 26, 'BTC-18JUN22': 30, 'BTC-18MAR22': 50, 'BTC-18MAR23': 48, 'BTC-18MAY22': 22, 'BTC-18NOV21': 44, 'BTC-18NOV22': 72, 'BTC-18OCT22': 30, 'BTC-18SEP22': 28, 'BTC-19APR22': 28, 'BTC-19A
+UG22': 70, 'BTC-19DEC21': 30, 'BTC-19DEC22': 32, 'BTC-19FEB22': 30, 'BTC-19FEB23': 48, 'BTC-19JAN22': 30, 'BTC-19JAN23': 38, 'BTC-19JUL22': 26, 'BTC-19JUN22': 28, 'BTC-19MAR22': 28, 'BTC-19MAR23': 38, 'BTC-19MAY22'
+: 22, 'BTC-19NOV21': 72, 'BTC-19NOV22': 32, 'BTC-19OCT22': 34, 'BTC-19SEP22': 32, 'BTC-1APR22': 44, 'BTC-1APR23': 34, 'BTC-1AUG22': 28, 'BTC-1DEC21': 38, 'BTC-1DEC22': 32, 'BTC-1FEB22': 26, 'BTC-1FEB23': 42, 'BTC-1
+JAN22': 30, 'BTC-1JAN23': 28, 'BTC-1JUL22': 82, 'BTC-1JUN22': 34, 'BTC-1MAR22': 32, 'BTC-1MAR23': 40, 'BTC-1MAY22': 26, 'BTC-1NOV22': 32, 'BTC-1OCT22': 32, 'BTC-1SEP22': 26, 'BTC-20APR22': 28, 'BTC-20AUG22': 28, 'B
+TC-20DEC21': 32, 'BTC-20DEC22': 32, 'BTC-20FEB22': 28, 'BTC-20FEB23': 42, 'BTC-20JAN22': 26, 'BTC-20JAN23': 62, 'BTC-20JUL22': 26, 'BTC-20JUN22': 26, 'BTC-20MAR22': 30, 'BTC-20MAR23': 32, 'BTC-20MAY22': 58, 'BTC-20
+NOV21': 40, 'BTC-20NOV22': 32, 'BTC-20OCT22': 34, 'BTC-20SEP22': 34, 'BTC-21APR22': 30, 'BTC-21AUG22': 26, 'BTC-21DEC21': 32, 'BTC-21DEC22': 32, 'BTC-21FEB22': 26, 'BTC-21FEB23': 44, 'BTC-21JAN22': 54, 'BTC-21JAN23
+': 42, 'BTC-21JUL22': 32, 'BTC-21JUN22': 30, 'BTC-21MAR22': 26, 'BTC-21MAR23': 36, 'BTC-21MAY22': 22, 'BTC-21NOV21': 40, 'BTC-21OCT22': 62, 'BTC-21SEP22': 30, 'BTC-22APR22': 52, 'BTC-22AUG22': 24, 'BTC-22DEC21': 32
+, 'BTC-22DEC22': 32, 'BTC-22FEB22': 28, 'BTC-22FEB23': 48, 'BTC-22JAN22': 34, 'BTC-22JAN23': 50, 'BTC-22JUL22': 66, 'BTC-22JUN22': 26, 'BTC-22MAR22': 26, 'BTC-22MAR23': 32, 'BTC-22MAY22': 22, 'BTC-22NOV21': 40, 'BT
+C-22NOV22': 34, 'BTC-22OCT22': 30, 'BTC-22SEP22': 30, 'BTC-23APR22': 28, 'BTC-23AUG22': 26, 'BTC-23DEC21': 32, 'BTC-23DEC22': 54, 'BTC-23FEB22': 30, 'BTC-23FEB23': 46, 'BTC-23JAN22': 28, 'BTC-23JAN23': 46, 'BTC-23J
+UL22': 26, 'BTC-23JUN22': 26, 'BTC-23MAR22': 28, 'BTC-23MAR23': 34, 'BTC-23MAY22': 20, 'BTC-23NOV21': 40, 'BTC-23NOV22': 28, 'BTC-23OCT22': 32, 'BTC-23SEP22': 62, 'BTC-24APR22': 28, 'BTC-24AUG22': 24, 'BTC-24DEC21'
+: 66, 'BTC-24DEC22': 30, 'BTC-24FEB22': 26, 'BTC-24FEB23': 66, 'BTC-24JAN22': 24, 'BTC-24JAN23': 40, 'BTC-24JUL22': 28, 'BTC-24JUN22': 98, 'BTC-24MAR22': 30, 'BTC-24MAR23': 96, 'BTC-24MAY22': 22, 'BTC-24NOV21': 42,
+ 'BTC-24NOV22': 32, 'BTC-24OCT22': 30, 'BTC-24SEP22': 30, 'BTC-25APR22': 26, 'BTC-25AUG22': 26, 'BTC-25DEC21': 36, 'BTC-25DEC22': 30, 'BTC-25FEB22': 72, 'BTC-25FEB23': 46, 'BTC-25JAN22': 26, 'BTC-25JAN23': 44, 'BTC
+-25JUL22': 26, 'BTC-25JUN22': 26, 'BTC-25MAR22': 72, 'BTC-25MAR23': 34, 'BTC-25MAY22': 22, 'BTC-25NOV21': 40, 'BTC-25NOV22': 74, 'BTC-25OCT22': 34, 'BTC-25SEP22': 28, 'BTC-26APR22': 26, 'BTC-26AUG22': 74, 'BTC-26DE
+C21': 34, 'BTC-26DEC22': 30, 'BTC-26FEB22': 30, 'BTC-26FEB23': 44, 'BTC-26JAN22': 30, 'BTC-26JAN23': 40, 'BTC-26JUL22': 26, 'BTC-26JUN22': 24, 'BTC-26MAR23': 34, 'BTC-26MAY22': 20, 'BTC-26NOV21': 60, 'BTC-26NOV22':
+ 32, 'BTC-26OCT22': 34, 'BTC-26SEP22': 28, 'BTC-27APR22': 30, 'BTC-27AUG22': 24, 'BTC-27DEC21': 32, 'BTC-27DEC22': 30, 'BTC-27FEB22': 30, 'BTC-27FEB23': 42, 'BTC-27JAN22': 28, 'BTC-27JAN23': 74, 'BTC-27JUL22': 24, 
+'BTC-27JUN22': 26, 'BTC-27MAR23': 30, 'BTC-27MAY22': 78, 'BTC-27NOV21': 42, 'BTC-27NOV22': 28, 'BTC-27OCT22': 40, 'BTC-27SEP22': 32, 'BTC-28APR22': 28, 'BTC-28AUG22': 28, 'BTC-28DEC21': 34, 'BTC-28DEC22': 30, 'BTC-
+28FEB22': 26, 'BTC-28FEB23': 44, 'BTC-28JAN22': 70, 'BTC-28JAN23': 40, 'BTC-28JUL22': 26, 'BTC-28JUN22': 26, 'BTC-28MAR23': 32, 'BTC-28MAY22': 30, 'BTC-28NOV21': 42, 'BTC-28NOV22': 30, 'BTC-28OCT22': 66, 'BTC-28SEP
+22': 32, 'BTC-29APR22': 60, 'BTC-29AUG22': 22, 'BTC-29DEC21': 34, 'BTC-29DEC22': 30, 'BTC-29JAN22': 28, 'BTC-29JAN23': 40, 'BTC-29JUL22': 90, 'BTC-29JUN22': 26, 'BTC-29MAR23': 34, 'BTC-29MAY22': 30, 'BTC-29NOV21': 
+38, 'BTC-29NOV22': 30, 'BTC-29OCT22': 36, 'BTC-29SEP22': 32, 'BTC-2APR23': 36, 'BTC-2AUG22': 26, 'BTC-2DEC21': 44, 'BTC-2DEC22': 60, 'BTC-2FEB22': 26, 'BTC-2FEB23': 42, 'BTC-2JAN22': 34, 'BTC-2JUL22': 26, 'BTC-2JUN
+22': 32, 'BTC-2MAR22': 38, 'BTC-2MAR23': 44, 'BTC-2MAY22': 26, 'BTC-2NOV22': 36, 'BTC-2OCT22': 28, 'BTC-2SEP22': 72, 'BTC-30APR22': 26, 'BTC-30AUG22': 28, 'BTC-30DEC21': 34, 'BTC-30DEC22': 88, 'BTC-30JAN22': 24, 'B
+TC-30JAN23': 40, 'BTC-30JUL22': 28, 'BTC-30JUN22': 24, 'BTC-30MAR23': 38, 'BTC-30MAY22': 28, 'BTC-30NOV21': 42, 'BTC-30NOV22': 30, 'BTC-30OCT22': 36, 'BTC-30SEP22': 90, 'BTC-31AUG22': 24, 'BTC-31DEC21': 94, 'BTC-31
+DEC22': 30, 'BTC-31JAN22': 26, 'BTC-31JAN23': 44, 'BTC-31JUL22': 28, 'BTC-31MAR23': 112, 'BTC-31MAY22': 36, 'BTC-31OCT22': 32, 'BTC-3APR22': 32, 'BTC-3APR23': 28, 'BTC-3AUG22': 28, 'BTC-3DEC21': 70, 'BTC-3DEC22': 3
+0, 'BTC-3FEB22': 28, 'BTC-3FEB23': 82, 'BTC-3JAN22': 30, 'BTC-3JUL22': 26, 'BTC-3JUN22': 54, 'BTC-3MAR22': 34, 'BTC-3MAR23': 84, 'BTC-3MAY22': 26, 'BTC-3NOV22': 36, 'BTC-3OCT22': 26, 'BTC-3SEP22': 22, 'BTC-4APR22':
+ 30, 'BTC-4APR23': 32, 'BTC-4AUG22': 28, 'BTC-4DEC21': 42, 'BTC-4DEC22': 26, 'BTC-4FEB22': 50, 'BTC-4FEB23': 44, 'BTC-4JAN22': 30, 'BTC-4JAN23': 32, 'BTC-4JUL22': 22, 'BTC-4JUN22': 32, 'BTC-4MAR22': 52, 'BTC-4MAR23
+': 44, 'BTC-4MAY22': 24, 'BTC-4NOV22': 64, 'BTC-4OCT22': 28, 'BTC-4SEP22': 26, 'BTC-5APR22': 32, 'BTC-5APR23': 34, 'BTC-5AUG22': 72, 'BTC-5DEC21': 50, 'BTC-5DEC22': 26, 'BTC-5FEB22': 28, 'BTC-5FEB23': 40, 'BTC-5JAN
+22': 30, 'BTC-5JAN23': 32, 'BTC-5JUL22': 24, 'BTC-5JUN22': 32, 'BTC-5MAR22': 30, 'BTC-5MAR23': 40, 'BTC-5MAY22': 26, 'BTC-5NOV22': 34, 'BTC-5OCT22': 30, 'BTC-5SEP22': 24, 'BTC-6APR22': 32, 'BTC-6APR23': 32, 'BTC-6A
+UG22': 24, 'BTC-6DEC21': 34, 'BTC-6DEC22': 28, 'BTC-6FEB22': 32, 'BTC-6FEB23': 42, 'BTC-6JAN22': 32, 'BTC-6JAN23': 56, 'BTC-6JUL22': 26, 'BTC-6JUN22': 32, 'BTC-6MAR22': 30, 'BTC-6MAR23': 40, 'BTC-6MAY22': 42, 'BTC-
+6NOV22': 38, 'BTC-6OCT22': 28, 'BTC-6SEP22': 24, 'BTC-7APR22': 30, 'BTC-7APR23': 102, 'BTC-7AUG22': 28, 'BTC-7DEC21': 34, 'BTC-7DEC22': 30, 'BTC-7FEB22': 26, 'BTC-7FEB23': 42, 'BTC-7JAN22': 54, 'BTC-7JAN23': 30, 'B
+TC-7JUL22': 24, 'BTC-7JUN22': 34, 'BTC-7MAR22': 24, 'BTC-7MAR23': 40, 'BTC-7MAY22': 30, 'BTC-7NOV22': 36, 'BTC-7OCT22': 66, 'BTC-7SEP22': 24, 'BTC-8APR22': 50, 'BTC-8APR23': 28, 'BTC-8AUG22': 28, 'BTC-8DEC21': 38, 
+'BTC-8DEC22': 26, 'BTC-8FEB22': 28, 'BTC-8FEB23': 40, 'BTC-8JAN22': 30, 'BTC-8JAN23': 32, 'BTC-8JUL22': 82, 'BTC-8JUN22': 34, 'BTC-8MAR22': 30, 'BTC-8MAR23': 40, 'BTC-8MAY22': 26, 'BTC-8NOV22': 34, 'BTC-8OCT22': 30
+, 'BTC-8SEP22': 26, 'BTC-9APR22': 28, 'BTC-9APR23': 28, 'BTC-9AUG22': 28, 'BTC-9DEC21': 36, 'BTC-9DEC22': 56, 'BTC-9FEB22': 32, 'BTC-9FEB23': 40, 'BTC-9JAN23': 28, 'BTC-9JUL22': 30, 'BTC-9JUN22': 36, 'BTC-9MAR22': 
+28, 'BTC-9MAR23': 40, 'BTC-9MAY22': 26, 'BTC-9NOV22': 50, 'BTC-9OCT22': 30, 'BTC-9SEP22': 70, 'ETH-10APR22': 34, 'ETH-10APR23': 26, 'ETH': 54923, 'ETH-10AUG22': 40, 'ETH-10DEC21': 50, 'ETH-10DEC22': 42, 'ETH-10FEB2
+2': 44, 'ETH-10FEB23': 66, 'ETH-10JAN22': 42, 'ETH-10JAN23': 42, 'ETH-10JUL22': 24, 'ETH-10JUN22': 54, 'ETH-10MAR22': 28, 'ETH-10MAR23': 62, 'ETH-10MAY22': 30, 'ETH-10NOV22': 60, 'ETH-10OCT22': 28, 'ETH-10SEP22': 3
+6, 'ETH-11APR22': 34, 'ETH-11AUG22': 36, 'ETH-11DEC21': 58, 'ETH-11DEC22': 40, 'ETH-11FEB22': 60, 'ETH-11FEB23': 52, 'ETH-11JAN22': 40, 'ETH-11JAN23': 44, 'ETH-11JUL22': 24, 'ETH-11JUN22': 26, 'ETH-11MAR22': 48, 'E
+TH-11MAR23': 50, 'ETH-11MAY22': 30, 'ETH-11NOV22': 58, 'ETH-11OCT22': 28, 'ETH-11SEP22': 38, 'ETH-12APR22': 36, 'ETH-12APR23': 26, 'ETH-12AUG22': 56, 'ETH-12DEC21': 54, 'ETH-12DEC22': 40, 'ETH-12FEB22': 42, 'ETH-12
+FEB23': 50, 'ETH-12JAN22': 42, 'ETH-12JAN23': 46, 'ETH-12JUL22': 24, 'ETH-12JUN22': 28, 'ETH-12MAR22': 28, 'ETH-12MAR23': 38, 'ETH-12MAY22': 44, 'ETH-12NOV22': 52, 'ETH-12OCT22': 28, 'ETH-12SEP22': 36, 'ETH-13APR22
+': 36, 'ETH-13APR23': 26, 'ETH-13AUG22': 40, 'ETH-13DEC21': 50, 'ETH-13DEC22': 40, 'ETH-13FEB22': 34, 'ETH-13FEB23': 48, 'ETH-13JAN23': 50, 'ETH-13JUL22': 20, 'ETH-13JUN22': 28, 'ETH-13MAR22': 28, 'ETH-13MAR23': 66
+, 'ETH-13MAY22': 62, 'ETH-13NOV22': 40, 'ETH-13OCT22': 24, 'ETH-13SEP22': 36, 'ETH-14APR22': 30, 'ETH-14APR23': 74, 'ETH-14AUG22': 40, 'ETH-14DEC21': 50, 'ETH-14DEC22': 42, 'ETH-14FEB22': 32, 'ETH-14FEB23': 48, 'ET
+H-14JAN22': 56, 'ETH-14JAN23': 48, 'ETH-14JUL22': 20, 'ETH-14JUN22': 32, 'ETH-14MAR22': 28, 'ETH-14MAR23': 64, 'ETH-14MAY22': 28, 'ETH-14NOV22': 40, 'ETH-14OCT22': 38, 'ETH-14SEP22': 36, 'ETH-15APR22': 54, 'ETH-15A
+PR23': 40, 'ETH-15AUG22': 42, 'ETH-15DEC21': 56, 'ETH-15DEC22': 48, 'ETH-15FEB22': 32, 'ETH-15FEB23': 50, 'ETH-15JAN22': 42, 'ETH-15JAN23': 54, 'ETH-15JUL22': 32, 'ETH-15JUN22': 26, 'ETH-15MAR22': 28, 'ETH-15MAR23'
+: 58, 'ETH-15MAY22': 26, 'ETH-15NOV22': 40, 'ETH-15OCT22': 28, 'ETH-15SEP22': 40, 'ETH-16APR22': 34, 'ETH-16APR23': 28, 'ETH-16AUG22': 42, 'ETH-16DEC21': 46, 'ETH-16DEC22': 48, 'ETH-16FEB22': 34, 'ETH-16FEB23': 52,
+ 'ETH-16JAN22': 42, 'ETH-16JAN23': 52, 'ETH-16JUL22': 26, 'ETH-16JUN22': 26, 'ETH-16MAR22': 28, 'ETH-16MAR23': 50, 'ETH-16MAY22': 26, 'ETH-16NOV22': 40, 'ETH-16OCT22': 30, 'ETH-16SEP22': 54, 'ETH-17APR22': 32, 'ETH
+-17APR23': 26, 'ETH-17AUG22': 40, 'ETH-17DEC21': 56, 'ETH-17DEC22': 42, 'ETH-17FEB22': 34, 'ETH-17FEB23': 60, 'ETH-17JAN22': 38, 'ETH-17JAN23': 48, 'ETH-17JUL22': 28, 'ETH-17JUN22': 76, 'ETH-17MAR22': 30, 'ETH-17MA
+R23': 62, 'ETH-17MAY22': 24, 'ETH-17NOV22': 40, 'ETH-17OCT22': 30, 'ETH-17SEP22': 40, 'ETH-18APR22': 30, 'ETH-18APR23': 28, 'ETH-18AUG22': 40, 'ETH-18DEC21': 50, 'ETH-18DEC22': 44, 'ETH-18FEB22': 56, 'ETH-18FEB23':
+ 54, 'ETH-18JAN22': 39, 'ETH-18JAN23': 50, 'ETH-18JUL22': 30, 'ETH-18JUN22': 24, 'ETH-18MAR22': 50, 'ETH-18MAR23': 30, 'ETH-18MAY22': 24, 'ETH-18NOV21': 54, 'ETH-18NOV22': 60, 'ETH-18OCT22': 32, 'ETH-18SEP22': 32, 
+'ETH-19APR22': 34, 'ETH-19AUG22': 54, 'ETH-19DEC21': 48, 'ETH-19DEC22': 38, 'ETH-19FEB22': 36, 'ETH-19FEB23': 56, 'ETH-19JAN22': 40, 'ETH-19JAN23': 50, 'ETH-19JUL22': 32, 'ETH-19JUN22': 22, 'ETH-19MAR22': 32, 'ETH-
+19MAR23': 30, 'ETH-19MAY22': 26, 'ETH-19NOV21': 52, 'ETH-19NOV22': 38, 'ETH-19OCT22': 34, 'ETH-19SEP22': 28, 'ETH-1APR22': 38, 'ETH-1APR23': 22, 'ETH-1AUG22': 36, 'ETH-1DEC21': 58, 'ETH-1DEC22': 42, 'ETH-1FEB22': 3
+6, 'ETH-1FEB23': 50, 'ETH-1JAN22': 44, 'ETH-1JAN23': 38, 'ETH-1JUL22': 64, 'ETH-1JUN22': 28, 'ETH-1MAR22': 34, 'ETH-1MAR23': 52, 'ETH-1MAY22': 32, 'ETH-1NOV22': 42, 'ETH-1OCT22': 28, 'ETH-1SEP22': 34, 'ETH-20APR22'
+: 30, 'ETH-20AUG22': 38, 'ETH-20DEC21': 48, 'ETH-20DEC22': 38, 'ETH-20FEB22': 34, 'ETH-20FEB23': 54, 'ETH-20JAN22': 40, 'ETH-20JAN23': 56, 'ETH-20JUL22': 32, 'ETH-20JUN22': 22, 'ETH-20MAR22': 30, 'ETH-20MAR23': 24,
+ 'ETH-20MAY22': 62, 'ETH-20NOV21': 58, 'ETH-20NOV22': 34, 'ETH-20OCT22': 36, 'ETH-20SEP22': 30, 'ETH-21APR22': 34, 'ETH-21AUG22': 36, 'ETH-21DEC21': 48, 'ETH-21DEC22': 38, 'ETH-21FEB22': 30, 'ETH-21FEB23': 54, 'ETH
+-21JAN22': 52, 'ETH-21JAN23': 52, 'ETH-21JUL22': 32, 'ETH-21JUN22': 26, 'ETH-21MAR22': 32, 'ETH-21MAR23': 26, 'ETH-21MAY22': 26, 'ETH-21NOV21': 56, 'ETH-21OCT22': 44, 'ETH-21SEP22': 28, 'ETH-22APR22': 58, 'ETH-22AU
+G22': 36, 'ETH-22DEC21': 50, 'ETH-22DEC22': 36, 'ETH-22FEB22': 30, 'ETH-22FEB23': 54, 'ETH-22JAN22': 54, 'ETH-22JAN23': 56, 'ETH-22JUL22': 48, 'ETH-22JUN22': 24, 'ETH-22MAR22': 32, 'ETH-22MAR23': 26, 'ETH-22MAY22':
+ 24, 'ETH-22NOV21': 52, 'ETH-22NOV22': 38, 'ETH-22OCT22': 30, 'ETH-22SEP22': 28, 'ETH-23APR22': 34, 'ETH-23AUG22': 32, 'ETH-23DEC21': 48, 'ETH-23DEC22': 46, 'ETH-23FEB22': 34, 'ETH-23FEB23': 54, 'ETH-23JAN22': 48, 
+'ETH-23JAN23': 54, 'ETH-23JUL22': 32, 'ETH-23JUN22': 22, 'ETH-23MAR22': 32, 'ETH-23MAR23': 28, 'ETH-23MAY22': 22, 'ETH-23NOV21': 54, 'ETH-23NOV22': 36, 'ETH-23OCT22': 32, 'ETH-23SEP22': 52, 'ETH-24APR22': 30, 'ETH-
+24AUG22': 36, 'ETH-24DEC21': 56, 'ETH-24DEC22': 36, 'ETH-24FEB22': 32, 'ETH-24FEB23': 62, 'ETH-24JAN22': 34, 'ETH-24JAN23': 48, 'ETH-24JUL22': 32, 'ETH-24JUN22': 110, 'ETH-24MAR22': 32, 'ETH-24MAR23': 66, 'ETH-24MA
+Y22': 26, 'ETH-24NOV21': 50, 'ETH-24NOV22': 38, 'ETH-24OCT22': 30, 'ETH-24SEP22': 26, 'ETH-25APR22': 30, 'ETH-25AUG22': 34, 'ETH-25DEC21': 54, 'ETH-25DEC22': 36, 'ETH-25FEB22': 90, 'ETH-25FEB23': 52, 'ETH-25JAN22':
+ 40, 'ETH-25JAN23': 50, 'ETH-25JUL22': 34, 'ETH-25JUN22': 22, 'ETH-25MAR22': 78, 'ETH-25MAR23': 28, 'ETH-25MAY22': 24, 'ETH-25NOV21': 58, 'ETH-25NOV22': 72, 'ETH-25OCT22': 36, 'ETH-25SEP22': 28, 'ETH-26APR22': 32, 
+'ETH-26AUG22': 82, 'ETH-26DEC21': 50, 'ETH-26DEC22': 34, 'ETH-26FEB22': 36, 'ETH-26FEB23': 52, 'ETH-26JAN22': 40, 'ETH-26JAN23': 52, 'ETH-26JUL22': 32, 'ETH-26JUN22': 24, 'ETH-26MAR23': 28, 'ETH-26MAY22': 22, 'ETH-
+26NOV21': 62, 'ETH-26NOV22': 36, 'ETH-26OCT22': 44, 'ETH-26SEP22': 28, 'ETH-27APR22': 36, 'ETH-27AUG22': 36, 'ETH-27DEC21': 48, 'ETH-27DEC22': 34, 'ETH-27FEB22': 32, 'ETH-27FEB23': 52, 'ETH-27JAN22': 36, 'ETH-27JAN
+23': 76, 'ETH-27JUL22': 32, 'ETH-27JUN22': 24, 'ETH-27MAR23': 22, 'ETH-27MAY22': 74, 'ETH-27NOV21': 60, 'ETH-27NOV22': 38, 'ETH-27OCT22': 50, 'ETH-27SEP22': 28, 'ETH-28APR22': 34, 'ETH-28AUG22': 36, 'ETH-28DEC21': 
+48, 'ETH-28DEC22': 34, 'ETH-28FEB22': 30, 'ETH-28FEB23': 52, 'ETH-28JAN22': 84, 'ETH-28JAN23': 52, 'ETH-28JUL22': 32, 'ETH-28JUN22': 26, 'ETH-28MAR23': 26, 'ETH-28MAY22': 28, 'ETH-28NOV21': 64, 'ETH-28NOV22': 36, '
+ETH-28OCT22': 88, 'ETH-28SEP22': 28, 'ETH-29APR22': 58, 'ETH-29AUG22': 32, 'ETH-29DEC21': 50, 'ETH-29DEC22': 36, 'ETH-29JAN22': 34, 'ETH-29JAN23': 52, 'ETH-29JUL22': 84, 'ETH-29JUN22': 24, 'ETH-29MAR23': 26, 'ETH-2
+9MAY22': 26, 'ETH-29NOV21': 50, 'ETH-29NOV22': 36, 'ETH-29OCT22': 40, 'ETH-29SEP22': 32, 'ETH-2APR23': 24, 'ETH-2AUG22': 38, 'ETH-2DEC21': 64, 'ETH-2DEC22': 52, 'ETH-2FEB22': 38, 'ETH-2FEB23': 52, 'ETH-2JAN22': 46,
+ 'ETH-2JUL22': 20, 'ETH-2JUN22': 30, 'ETH-2MAR22': 34, 'ETH-2MAR23': 48, 'ETH-2MAY22': 28, 'ETH-2NOV22': 42, 'ETH-2OCT22': 28, 'ETH-2SEP22': 62, 'ETH-30APR22': 32, 'ETH-30AUG22': 32, 'ETH-30DEC21': 48, 'ETH-30DEC22
+': 86, 'ETH-30JAN22': 36, 'ETH-30JAN23': 52, 'ETH-30JUL22': 40, 'ETH-30JUN22': 24, 'ETH-30MAR23': 24, 'ETH-30MAY22': 24, 'ETH-30NOV21': 56, 'ETH-30NOV22': 38, 'ETH-30OCT22': 48, 'ETH-30SEP22': 108, 'ETH-31AUG22': 3
+2, 'ETH-31DEC21': 96, 'ETH-31DEC22': 38, 'ETH-31JAN22': 34, 'ETH-31JAN23': 52, 'ETH-31JUL22': 38, 'ETH-31MAR23': 100, 'ETH-31MAY22': 26, 'ETH-31OCT22': 44, 'ETH-3APR22': 36, 'ETH-3APR23': 26, 'ETH-3AUG22': 36, 'ETH
+-3DEC21': 58, 'ETH-3DEC22': 40, 'ETH-3FEB22': 38, 'ETH-3FEB23': 64, 'ETH-3JAN22': 46, 'ETH-3JUL22': 20, 'ETH-3JUN22': 56, 'ETH-3MAR22': 34, 'ETH-3MAR23': 60, 'ETH-3MAY22': 28, 'ETH-3NOV22': 42, 'ETH-3OCT22': 28, 'E
+TH-3SEP22': 36, 'ETH-4APR22': 36, 'ETH-4APR23': 24, 'ETH-4AUG22': 36, 'ETH-4DEC21': 64, 'ETH-4DEC22': 40, 'ETH-4FEB22': 56, 'ETH-4FEB23': 52, 'ETH-4JAN22': 46, 'ETH-4JAN23': 34, 'ETH-4JUL22': 20, 'ETH-4JUN22': 26, 
+'ETH-4MAR22': 50, 'ETH-4MAR23': 52, 'ETH-4MAY22': 30, 'ETH-4NOV22': 50, 'ETH-4OCT22': 28, 'ETH-4SEP22': 32, 'ETH-5APR22': 36, 'ETH-5APR23': 26, 'ETH-5AUG22': 56, 'ETH-5DEC21': 76, 'ETH-5DEC22': 40, 'ETH-5FEB22': 40
+, 'ETH-5FEB23': 52, 'ETH-5JAN22': 46, 'ETH-5JAN23': 36, 'ETH-5JUL22': 20, 'ETH-5JUN22': 26, 'ETH-5MAR22': 32, 'ETH-5MAR23': 50, 'ETH-5MAY22': 30, 'ETH-5NOV22': 42, 'ETH-5OCT22': 28, 'ETH-5SEP22': 36, 'ETH-6APR22': 
+36, 'ETH-6APR23': 30, 'ETH-6AUG22': 34, 'ETH-6DEC21': 54, 'ETH-6DEC22': 42, 'ETH-6FEB22': 42, 'ETH-6FEB23': 54, 'ETH-6JAN22': 48, 'ETH-6JAN23': 46, 'ETH-6JUL22': 24, 'ETH-6JUN22': 24, 'ETH-6MAR22': 28, 'ETH-6MAR23'
+: 50, 'ETH-6MAY22': 46, 'ETH-6NOV22': 44, 'ETH-6OCT22': 28, 'ETH-6SEP22': 34, 'ETH-7APR22': 40, 'ETH-7APR23': 66, 'ETH-7AUG22': 36, 'ETH-7DEC21': 52, 'ETH-7DEC22': 40, 'ETH-7FEB22': 38, 'ETH-7FEB23': 54, 'ETH-7JAN2
+2': 48, 'ETH-7JAN23': 40, 'ETH-7JUL22': 22, 'ETH-7JUN22': 26, 'ETH-7MAR22': 26, 'ETH-7MAR23': 50, 'ETH-7MAY22': 34, 'ETH-7NOV22': 42, 'ETH-7OCT22': 52, 'ETH-7SEP22': 32, 'ETH-8APR22': 48, 'ETH-8APR23': 26, 'ETH-8AU
+G22': 36, 'ETH-8DEC21': 58, 'ETH-8DEC22': 40, 'ETH-8FEB22': 38, 'ETH-8FEB23': 50, 'ETH-8JAN22': 44, 'ETH-8JAN23': 40, 'ETH-8JUL22': 34, 'ETH-8JUN22': 30, 'ETH-8MAR22': 28, 'ETH-8MAR23': 50, 'ETH-8MAY22': 28, 'ETH-8
+NOV22': 42, 'ETH-8OCT22': 28, 'ETH-8SEP22': 36, 'ETH-9APR22': 34, 'ETH-9APR23': 22, 'ETH-9AUG22': 34, 'ETH-9DEC21': 54, 'ETH-9DEC22': 48, 'ETH-9FEB22': 40, 'ETH-9FEB23': 52, 'ETH-9JAN23': 40, 'ETH-9JUL22': 24, 'ETH
+-9JUN22': 26, 'ETH-9MAR22': 30, 'ETH-9MAR23': 50, 'ETH-9MAY22': 28, 'ETH-9NOV22': 50, 'ETH-9OCT22': 28, 'ETH-9SEP22': 58, 'MATIC': 7116, 'PAXG': 2690, 'SOL-10AUG22': 46, 'SOL-10JUL22': 46, 'SOL-10JUN22': 36, 'SOL-1
+0MAY22': 16, 'SOL-10NOV22': 54, 'SOL-10OCT22': 36, 'SOL-10SEP22': 36, 'SOL-11AUG22': 48, 'SOL-11JUL22': 44, 'SOL-11JUN22': 22, 'SOL-11MAY22': 24, 'SOL-11NOV22': 64, 'SOL-11OCT22': 34, 'SOL-11SEP22': 38, 'SOL-12AUG2
+2': 72, 'SOL-12JUL22': 42, 'SOL-12JUN22': 22, 'SOL-12MAY22': 56, 'SOL-12OCT22': 36, 'SOL-12SEP22': 40, 'SOL-13AUG22': 50, 'SOL-13JUL22': 38, 'SOL-13JUN22': 24, 'SOL-13MAY22': 62, 'SOL-13OCT22': 32, 'SOL-13SEP22': 4
+2, 'SOL-14AUG22': 56, 'SOL-14JUL22': 38, 'SOL-14JUN22': 36, 'SOL-14MAY22': 58, 'SOL-14OCT22': 40, 'SOL-14SEP22': 44, 'SOL-15AUG22': 52, 'SOL-15JUL22': 60, 'SOL-15JUN22': 38, 'SOL-15MAY22': 22, 'SOL-15OCT22': 32, 'S
+OL-15SEP22': 48, 'SOL-16AUG22': 50, 'SOL-16JUL22': 44, 'SOL-16JUN22': 38, 'SOL-16MAY22': 24, 'SOL-16OCT22': 32, 'SOL-16SEP22': 58, 'SOL-17AUG22': 48, 'SOL-17JUL22': 44, 'SOL-17JUN22': 50, 'SOL-17MAY22': 22, 'SOL-17
+OCT22': 34, 'SOL-17SEP22': 40, 'SOL-18AUG22': 48, 'SOL-18JUL22': 46, 'SOL-18JUN22': 34, 'SOL-18MAY22': 20, 'SOL-18NOV22': 74, 'SOL-18OCT22': 32, 'SOL-18SEP22': 34, 'SOL-19AUG22': 74, 'SOL-19JUL22': 44, 'SOL-19JUN22
+': 32, 'SOL-19MAY22': 28, 'SOL-19OCT22': 34, 'SOL-19SEP22': 36, 'SOL-1AUG22': 54, 'SOL-1JUL22': 70, 'SOL-1JUN22': 22, 'SOL-1NOV22': 38, 'SOL-1OCT22': 36, 'SOL-1SEP22': 34, 'SOL-20AUG22': 46, 'SOL-20JUL22': 48, 'SOL
+-20JUN22': 40, 'SOL-20MAY22': 72, 'SOL-20OCT22': 32, 'SOL-20SEP22': 38, 'SOL-21AUG22': 40, 'SOL-21JUL22': 56, 'SOL-21JUN22': 44, 'SOL-21MAY22': 32, 'SOL-21OCT22': 38, 'SOL-21SEP22': 36, 'SOL-22AUG22': 42, 'SOL-22JU
+L22': 68, 'SOL-22JUN22': 46, 'SOL-22MAY22': 30, 'SOL-22OCT22': 28, 'SOL-22SEP22': 32, 'SOL-23AUG22': 40, 'SOL-23JUL22': 50, 'SOL-23JUN22': 44, 'SOL-23MAY22': 26, 'SOL-23OCT22': 28, 'SOL-23SEP22': 64, 'SOL-24AUG22':
+ 40, 'SOL-24JUL22': 50, 'SOL-24JUN22': 68, 'SOL-24MAY22': 28, 'SOL-24OCT22': 28, 'SOL-24SEP22': 32, 'SOL-25AUG22': 38, 'SOL-25JUL22': 46, 'SOL-25JUN22': 46, 'SOL-25MAY22': 28, 'SOL-25NOV22': 64, 'SOL-25OCT22': 28, 
+'SOL-25SEP22': 36, 'SOL-26AUG22': 60, 'SOL-26JUL22': 46, 'SOL-26JUN22': 48, 'SOL-26MAY22': 28, 'SOL-26OCT22': 28, 'SOL-26SEP22': 38, 'SOL-27AUG22': 38, 'SOL-27JUL22': 44, 'SOL-27JUN22': 48, 'SOL-27MAY22': 56, 'SOL-
+27OCT22': 34, 'SOL-27SEP22': 36, 'SOL-28AUG22': 42, 'SOL-28JUL22': 42, 'SOL-28JUN22': 44, 'SOL-28MAY22': 26, 'SOL-28OCT22': 44, 'SOL-28SEP22': 36, 'SOL-29AUG22': 32, 'SOL-29JUL22': 64, 'SOL-29JUN22': 46, 'SOL-29MAY
+22': 22, 'SOL-29OCT22': 30, 'SOL-29SEP22': 42, 'SOL-2AUG22': 48, 'SOL-2JUL22': 38, 'SOL-2JUN22': 26, 'SOL-2NOV22': 38, 'SOL-2OCT22': 36, 'SOL-2SEP22': 58, 'SOL-30AUG22': 32, 'SOL-30DEC22': 46, 'SOL-30JUL22': 50, 'S
+OL-30JUN22': 44, 'SOL-30MAY22': 20, 'SOL-30OCT22': 34, 'SOL-30SEP22': 60, 'SOL-31AUG22': 36, 'SOL-31JUL22': 46, 'SOL-31MAY22': 24, 'SOL-31OCT22': 36, 'SOL-3AUG22': 46, 'SOL-3JUL22': 38, 'SOL-3JUN22': 44, 'SOL-3NOV2
+2': 36, 'SOL-3OCT22': 36, 'SOL-3SEP22': 36, 'SOL-4AUG22': 46, 'SOL-4JUL22': 36, 'SOL-4JUN22': 20, 'SOL-4NOV22': 38, 'SOL-4OCT22': 34, 'SOL-4SEP22': 32, 'SOL-5AUG22': 70, 'SOL-5JUL22': 36, 'SOL-5JUN22': 20, 'SOL-5NO
+V22': 30, 'SOL-5OCT22': 34, 'SOL-5SEP22': 36, 'SOL-6AUG22': 40, 'SOL-6JUL22': 42, 'SOL-6JUN22': 20, 'SOL-6MAY22': 10, 'SOL-6NOV22': 40, 'SOL-6OCT22': 36, 'SOL-6SEP22': 36, 'SOL-7AUG22': 46, 'SOL-7JUL22': 42, 'SOL-7
+JUN22': 24, 'SOL-7NOV22': 42, 'SOL-7OCT22': 54, 'SOL-7SEP22': 32, 'SOL-8AUG22': 46, 'SOL-8JUL22': 68, 'SOL-8JUN22': 26, 'SOL-8NOV22': 40, 'SOL-8OCT22': 36, 'SOL-8SEP22': 36, 'SOL-9AUG22': 44, 'SOL-9JUL22': 44, 'SOL
+-9JUN22': 20, 'SOL-9NOV22': 38, 'SOL-9OCT22': 38, 'SOL-9SEP22': 60, 'SOL': 31494, 'XRP': 28316}
