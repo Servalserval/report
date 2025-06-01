@@ -46,7 +46,6 @@ class MetadataIntervalTree():
         """
         active = self.interval_tree[timestamp]
         instrument_name_list = [i.data for i in active]
-        print(instrument_name_list)
         return instrument_name_list
     
     async def async_fetch_unfetched_data_in_time_range(self, start_time, end_time, max_expiration, min_expiration, to_reference_diff, line_name):
