@@ -30,6 +30,8 @@ class MetadataIntervalTree():
         file_path = f"data/deribit_market_list/{file_name}.json"
         res = load_data(lockfile = file_path)
         for instrument_name, instrument_info in res.items():
+            if instrument_info["endDate"] + 1 < instrument_info["startDate"] + 3600 * 6 * 1000:
+                continue
             self.interval_tree[instrument_info["startDate"] + 3600 * 6 * 1000 : instrument_info["endDate"] + 1] = instrument_name
             self.option_dict[instrument_name] = instrument_info
     
