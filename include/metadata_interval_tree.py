@@ -132,6 +132,7 @@ class MetadataIntervalTree():
         iv_using_option_file = f"./data/iv_using_option/{fixed_start_time}_{fixed_end_time}.json"
         iv_to_use = load_data(lockfile = iv_using_option_file)
         error_count = 0
+        used_data_time_to_expiration_dict = {}
 
         for current_time, instrument_name_list in tqdm.tqdm(iv_to_use.items()):
             try:
@@ -155,7 +156,8 @@ class MetadataIntervalTree():
                 if not found_price_flag:
                     error_count += 1
                     continue
-
+                
+                used_data_time_to_expiration_dict[current_time] = time_to_expiration
                 option_type = "call" if instrument_name.split("-")[3] == "C" else "put"
                 
                 strike_price = int(instrument_name.split("-")[2])
@@ -182,6 +184,8 @@ class MetadataIntervalTree():
         print("Error count : ", error_count)
         check_os_list(filedir="data/implied_vol_list", filename=f"{fixed_start_time}_{fixed_end_time}.json")
         output_data(data=self.implied_vol_dict, lockfile = f"data/implied_vol_list/{fixed_start_time}_{fixed_end_time}.json")
+        check_os_list(filedir="data/time_to_expiration", filename=f"{fixed_start_time}_{fixed_end_time}.json")
+        output_data(data=used_data_time_to_expiration_dict, lockfile = f"data/time_to_expiration/{fixed_start_time}_{fixed_end_time}.json")
     
 
                 
