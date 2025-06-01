@@ -19,6 +19,7 @@ LINE_1 = {
 class IVCalculator():
     def __init__(self):
         self.tree = MetadataIntervalTree()
+        self.set_tree()
     
     def set_tree(self):
         self.tree.load_reference_price()
