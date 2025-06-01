@@ -192,7 +192,7 @@ class MetadataIntervalTree():
         for current_time, instrument_name in tqdm.tqdm(iv_to_use.items()):
             try:
                 current_price = self.reference_price[int(current_time)]
-                
+
                 if instrument_name not in self.option_price_dict.keys():
                     self.load_option_price_data_file(instrument_name=instrument_name)
 
@@ -204,6 +204,7 @@ class MetadataIntervalTree():
                     if instrument_name not in self.option_price_dict.keys():
                         self.load_option_price_data_file(instrument_name=instrument_name)
 
+                    print("Instrument name : ", instrument_name, ", keys : ", self.option_price_dict[instrument_name].keys(), ", current time : ", current_time)
                     if int(current_time) in self.option_price_dict[instrument_name].keys():
                         option_market_price = self.option_price_dict[instrument_name][int(current_time)] * current_price
                         iv_plus_1_count += 1
