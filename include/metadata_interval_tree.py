@@ -48,7 +48,7 @@ class MetadataIntervalTree():
         instrument_name_list = [i.data for i in active]
         return instrument_name_list
     
-    async def async_fetch_unfetched_data_in_time_range(self, start_time, end_time, max_expiration, min_expiration, to_reference_diff, line_name):
+    def fetch_unfetched_data_in_time_range(self, start_time, end_time, max_expiration, min_expiration, to_reference_diff, line_name):
         """
         In a time range, find out which data should be fetched beforehand.
         Check current filepath. If data doesn't exist, then fetch.
@@ -91,15 +91,13 @@ class MetadataIntervalTree():
             self.option_referencing_dict[current_time] = closest_price_instrument
         
         tasks = []
-        fetch_instrument_list = []
         for instrument_name in total_needed_instrument_list:
             file_dir_name = instrument_name.split("-")[1]
             file_existance = check_os_list(filedir = f"data/deribit_data/{file_dir_name}", filename = f"{instrument_name}.json")
             if not file_existance:
-                tasks.append(fetch_deribit_history_options_ohlcv(instrument_info = self.option_dict[instrument_name], fetch_data_length = 86400 * 3 * 1000))
+                asyncio.get_event_loop().run_until_complete(fetch_deribit_history_options_ohlcv(instrument_info = self.option_dict[instrument_name], fetch_data_length = 86400 * 3 * 1000))
         
-        res = await asyncio.gather(*tasks)
-        print("Fetch instrument : ", fetch_instrument_list)
+        print("Fetch instrument : ", total_needed_instrument_list)
 
 
 

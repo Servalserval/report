@@ -26,4 +26,4 @@ class IVCalculator():
         self.tree.add_from_file(file_name = FILE_NAME)
     
     def fetch_unfetched_data(self):
-        asyncio.get_event_loop().run_until_complete(self.tree.async_fetch_unfetched_data_in_time_range(start_time = START_TIME, end_time = END_TIME, max_expiration = LINE_1["max_expiration_range"], min_expiration = LINE_1["min_expiration_range"], to_reference_diff = LINE_1["to_reference_diff"], line_name = "line_1"))
+        self.tree.fetch_unfetched_data_in_time_range(start_time = START_TIME, end_time = END_TIME, max_expiration = LINE_1["max_expiration_range"], min_expiration = LINE_1["min_expiration_range"], to_reference_diff = LINE_1["to_reference_diff"], line_name = "line_1")
