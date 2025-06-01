@@ -80,8 +80,8 @@ class MetadataIntervalTree():
                     if expiration_time - current_time > max_expiration or expiration_time - current_time < min_expiration:
                         continue
 
-                    if (price - current_reference_price) ** 2 < closest_price:
-                        closest_price = price
+                    if (float(price) - current_reference_price) ** 2 < closest_price:
+                        closest_price = float(price)
                         closest_price_instrument = j
 
 # TODO : implement the part that we need something other than ATM options
