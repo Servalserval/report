@@ -64,6 +64,8 @@ class MetadataIntervalTree():
         current_instrument_list = []
         current_instrument_dict = {}
         total_needed_instrument_list = []
+        plus_1_total_needed_instrument_list = []
+        minus_1_total_needed_instrument_list = []
         for i in tqdm.tqdm(range(int((fixed_end_time - fixed_start_time) / REFERENCE_PRICE_INTERVAL))):
             current_time = int(fixed_start_time + i * REFERENCE_PRICE_INTERVAL)
             # If too slow, try to fix this part
@@ -89,13 +91,33 @@ class MetadataIntervalTree():
                         closest_price = float(price)
                         closest_price_instrument = j
 
-# TODO : implement the part that we need something other than ATM options
-# Not too slow, so don't try to improve time complexity.
-            if to_reference_diff != 0:
-                pass
+            closest_price_instrument_list = closest_price_instrument.split("-")
+
+            possible_plus_1 = f"{closest_price_instrument_list[0]}-{closest_price_instrument_list[1]}-{int(closest_price_instrument_list[2]) + 500}-C"
+            possible_plus_2 = f"{closest_price_instrument_list[0]}-{closest_price_instrument_list[1]}-{int(closest_price_instrument_list[2]) + 1000}-C"
+
+            if possible_plus_1 in current_instrument_list:
+                if possible_plus_1 not in plus_1_total_needed_instrument_list:
+                    plus_1_total_needed_instrument_list.append(possible_plus_1)
             
+            if possible_plus_2 in current_instrument_list:
+                if possible_plus_2 not in plus_1_total_needed_instrument_list:
+                    plus_1_total_needed_instrument_list.append(possible_plus_2)
+            
+            possible_minus_1 = f"{closest_price_instrument_list[0]}-{closest_price_instrument_list[1]}-{int(closest_price_instrument_list[2]) - 500}-C"
+            possible_minus_2 = f"{closest_price_instrument_list[0]}-{closest_price_instrument_list[1]}-{int(closest_price_instrument_list[2]) - 1000}-C"
+
+            if possible_minus_1 in current_instrument_list:
+                if possible_minus_1 not in minus_1_total_needed_instrument_list:
+                    minus_1_total_needed_instrument_list.append(possible_minus_1)
+            
+            if possible_minus_2 in current_instrument_list:
+                if possible_minus_2 not in minus_1_total_needed_instrument_list:
+                    minus_1_total_needed_instrument_list.append(possible_minus_2)
+
             if closest_price_instrument not in total_needed_instrument_list:
                 total_needed_instrument_list.append(closest_price_instrument)
+
             self.option_referencing_dict[current_time] = closest_price_instrument
         
         newly_fetched_num = 0
@@ -105,14 +127,45 @@ class MetadataIntervalTree():
             if not file_existance:
                 asyncio.get_event_loop().run_until_complete(fetch_deribit_history_options_ohlcv(instrument_info = self.option_dict[instrument_name], fetch_data_length = 86400 * 3 * 1000))
                 newly_fetched_num += 1
-                time.sleep(0.25)
-
-# TODO Add put version
+                time.sleep(0.1)
         
-        check_os_list(filedir="data/iv_using_option", filename=f"{fixed_start_time}_{fixed_end_time}.json")
-        output_data(data = self.option_referencing_dict, lockfile = f"./data/iv_using_option/{fixed_start_time}_{fixed_end_time}.json")
         print("Fetch instrument : ", total_needed_instrument_list)
         print("Newly fetched : ", newly_fetched_num)
+
+        check_os_list(filedir="data/iv_using_option", filename=f"{fixed_start_time}_{fixed_end_time}.json")
+        output_data(data = self.option_referencing_dict, lockfile = f"./data/iv_using_option/{fixed_start_time}_{fixed_end_time}.json")
+        
+        newly_fetched_num = 0
+        for instrument_name in tqdm.tqdm(plus_1_total_needed_instrument_list):
+            file_dir_name = instrument_name.split("-")[1]
+            file_existance = check_os_list(filedir = f"data/deribit_data/{file_dir_name}", filename = f"{instrument_name}.json")
+            if not file_existance:
+                asyncio.get_event_loop().run_until_complete(fetch_deribit_history_options_ohlcv(instrument_info = self.option_dict[instrument_name], fetch_data_length = 86400 * 3 * 1000))
+                newly_fetched_num += 1
+                time.sleep(0.1)
+
+        print("Fetch instrument : ", plus_1_total_needed_instrument_list)
+        print("Newly fetched : ", newly_fetched_num)
+
+        check_os_list(filedir="data/iv_plus_1_using_option", filename=f"{fixed_start_time}_{fixed_end_time}.json")
+        output_data(data = self.option_referencing_dict, lockfile = f"./data/iv_plus_1_using_option/{fixed_start_time}_{fixed_end_time}.json")
+
+        newly_fetched_num = 0
+        for instrument_name in tqdm.tqdm(minus_1_total_needed_instrument_list):
+            file_dir_name = instrument_name.split("-")[1]
+            file_existance = check_os_list(filedir = f"data/deribit_data/{file_dir_name}", filename = f"{instrument_name}.json")
+            if not file_existance:
+                asyncio.get_event_loop().run_until_complete(fetch_deribit_history_options_ohlcv(instrument_info = self.option_dict[instrument_name], fetch_data_length = 86400 * 3 * 1000))
+                newly_fetched_num += 1
+                time.sleep(0.1)
+
+        print("Fetch instrument : ", minus_1_total_needed_instrument_list)
+        print("Newly fetched : ", newly_fetched_num)
+
+        check_os_list(filedir="data/iv_minus_1_using_option", filename=f"{fixed_start_time}_{fixed_end_time}.json")
+        output_data(data = self.option_referencing_dict, lockfile = f"./data/iv_minus_1_using_option/{fixed_start_time}_{fixed_end_time}.json")
+
+# TODO Add put version
     
     def load_option_price_data_file(self, instrument_name):
         human_readable_time_format = instrument_name.split("-")[1]
@@ -130,6 +183,7 @@ class MetadataIntervalTree():
         error_count = 0
         instrument_success_count = {}
         instrument_error_count = {}
+        try_exist_list = [500, -500, 1000, -1000, 1500, -1500, 2000, -2000, 2500, -2500, 3000, -3000]
         for current_time, instrument_name in tqdm.tqdm(iv_to_use.items()):
             try:
                 if instrument_name not in self.option_price_dict.keys():
