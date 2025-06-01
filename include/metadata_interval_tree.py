@@ -120,46 +120,48 @@ class MetadataIntervalTree():
             self.option_price_dict[instrument_name][int(i["exchangeTimestamp"])] = i["open"]
     
     def calculate_iv(self, start_time, end_time):
-        fixed_start_time = int(int(start_time / REFERENCE_PRICE_INTERVAL) * REFERENCE_PRICE_INTERVAL + REFERENCE_PRICE_INTERVAL)
-        fixed_end_time = int(int(end_time / REFERENCE_PRICE_INTERVAL) * REFERENCE_PRICE_INTERVAL)
-        iv_using_option_file = f"./data/iv_using_option/{fixed_start_time}_{fixed_end_time}.json"
-        iv_to_use = load_data(lockfile = iv_using_option_file)
-        for current_time, instrument_name in tqdm.tqdm(iv_to_use.items()):
-            if instrument_name not in self.option_price_dict.keys():
-                self.load_option_price_data_file(instrument_name=instrument_name)
-            
-            option_type = "call" if instrument_name.split("-")[3] == "C" else "put"
-            current_price = self.reference_price[int(current_time)]
-            strike_price = int(instrument_name.split("-")[2])
-            time_to_expiration = (int(self.option_dict[instrument_name]["endDate"]) - int(current_time)) / (86400 * 1000 * 365)
-            no_risk_rate = 0
-            dividend_rate = 0
-            option_market_price = self.option_price_dict[instrument_name][int(current_time)] * current_price
-            imp_vol = implied_vol(
-                option_type = option_type,
-                S = current_price,
-                K = strike_price,
-                T = time_to_expiration,
-                r = no_risk_rate,
-                market_price = option_market_price,
-                q = dividend_rate
-            )
-            self.implied_vol_dict[current_time] = imp_vol
+        try:
+            fixed_start_time = int(int(start_time / REFERENCE_PRICE_INTERVAL) * REFERENCE_PRICE_INTERVAL + REFERENCE_PRICE_INTERVAL)
+            fixed_end_time = int(int(end_time / REFERENCE_PRICE_INTERVAL) * REFERENCE_PRICE_INTERVAL)
+            iv_using_option_file = f"./data/iv_using_option/{fixed_start_time}_{fixed_end_time}.json"
+            iv_to_use = load_data(lockfile = iv_using_option_file)
+            for current_time, instrument_name in tqdm.tqdm(iv_to_use.items()):
+                if instrument_name not in self.option_price_dict.keys():
+                    self.load_option_price_data_file(instrument_name=instrument_name)
+                
+                option_type = "call" if instrument_name.split("-")[3] == "C" else "put"
+                current_price = self.reference_price[int(current_time)]
+                strike_price = int(instrument_name.split("-")[2])
+                time_to_expiration = (int(self.option_dict[instrument_name]["endDate"]) - int(current_time)) / (86400 * 1000 * 365)
+                no_risk_rate = 0
+                dividend_rate = 0
+                option_market_price = self.option_price_dict[instrument_name][int(current_time)] * current_price
+                imp_vol = implied_vol(
+                    option_type = option_type,
+                    S = current_price,
+                    K = strike_price,
+                    T = time_to_expiration,
+                    r = no_risk_rate,
+                    market_price = option_market_price,
+                    q = dividend_rate
+                )
+                self.implied_vol_dict[current_time] = imp_vol
 
-        check_os_list(filedir="data/implied_vol_list", filename=f"{fixed_start_time}_{fixed_end_time}.json")
-        output_data(data=self.implied_vol_dict, lockfile = f"data/implied_vol_list/{fixed_start_time}_{fixed_end_time}.json")
+            check_os_list(filedir="data/implied_vol_list", filename=f"{fixed_start_time}_{fixed_end_time}.json")
+            output_data(data=self.implied_vol_dict, lockfile = f"data/implied_vol_list/{fixed_start_time}_{fixed_end_time}.json")
+        except Exception as e:
+            print(f"Error : instrument name : {instrument_name}, current time : {current_time}, error : {e}, traceback : {traceback.format_exc()}")
+
+                    
+                    
+
+
+
+
+                    
 
 
                 
-                
 
 
-
-
-                
-
-
-            
-
-
-    
+        
