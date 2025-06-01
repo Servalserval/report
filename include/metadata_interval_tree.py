@@ -191,6 +191,8 @@ class MetadataIntervalTree():
 
         for current_time, instrument_name in tqdm.tqdm(iv_to_use.items()):
             try:
+                current_price = self.reference_price[int(current_time)]
+                
                 if instrument_name not in self.option_price_dict.keys():
                     self.load_option_price_data_file(instrument_name=instrument_name)
 
@@ -220,7 +222,7 @@ class MetadataIntervalTree():
                         continue
                 
                 option_type = "call" if instrument_name.split("-")[3] == "C" else "put"
-                current_price = self.reference_price[int(current_time)]
+                
                 strike_price = int(instrument_name.split("-")[2])
                 time_to_expiration = (int(self.option_dict[instrument_name]["endDate"]) - int(current_time)) / (86400 * 1000 * 365)
                 no_risk_rate = 0
