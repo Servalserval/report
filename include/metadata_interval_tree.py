@@ -3,6 +3,7 @@ import os
 from intervaltree import Interval, IntervalTree
 from include.fetch_deribit_data import *
 import tqdm
+import time
 
 REFERENCE_PRICE_INTERVAL = 300 * 1000
 LARGE_INT = 2 ** 64
@@ -98,11 +99,15 @@ class MetadataIntervalTree():
             if not file_existance:
                 asyncio.get_event_loop().run_until_complete(fetch_deribit_history_options_ohlcv(instrument_info = self.option_dict[instrument_name], fetch_data_length = 86400 * 3 * 1000))
                 newly_fetched_num += 1
+                time.sleep(0.25)
         
         check_os_list(filedir="data/iv_using_option", filename=f"{fixed_start_time}_{fixed_end_time}.json")
         output_data(data = self.option_referencing_dict, lockfile = f"./data/iv_using_option/{fixed_start_time}_{fixed_end_time}.json")
         print("Fetch instrument : ", total_needed_instrument_list)
         print("Newly fetched : ", newly_fetched_num)
+    
+    def calculate_iv(self, start_time, end_time, max_expiration, min_expiration, to_reference_diff, line_name):
+        pass
 
 
 
