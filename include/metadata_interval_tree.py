@@ -21,6 +21,7 @@ class MetadataIntervalTree():
         self.option_price_dict = {}
         self.option_referencing_dict = {}
         self.implied_vol_dict = {}
+        self.realized_vol_dict = {}
     
     def add_from_file(self, file_name):
         """
@@ -29,7 +30,7 @@ class MetadataIntervalTree():
         file_path = f"data/deribit_market_list/{file_name}.json"
         res = load_data(lockfile = file_path)
         for instrument_name, instrument_info in res.items():
-            self.interval_tree[instrument_info["startDate"] : instrument_info["endDate"] + 1] = instrument_name
+            self.interval_tree[instrument_info["startDate"] + 3600 * 6 * 1000 : instrument_info["endDate"] + 1] = instrument_name
             self.option_dict[instrument_name] = instrument_info
     
     def load_reference_price(self):
@@ -146,6 +147,7 @@ class MetadataIntervalTree():
                     q = dividend_rate
                 )
                 self.implied_vol_dict[current_time] = imp_vol
+                # real_vol = realized_vol()
 
             check_os_list(filedir="data/implied_vol_list", filename=f"{fixed_start_time}_{fixed_end_time}.json")
             output_data(data=self.implied_vol_dict, lockfile = f"data/implied_vol_list/{fixed_start_time}_{fixed_end_time}.json")
