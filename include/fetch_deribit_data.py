@@ -81,4 +81,7 @@ async def fetch_deribit_history_options_ohlcv(instrument_info, fetch_data_length
 
     expire_time_in_readable_format = instrument_info["instrument"].split("-")[1]
     pathname = f"data/deribit_data/{expire_time_in_readable_format}/{instrument_info['instrument']}.json"
-    output_data(data=res, lockfile=pathname)
+    decoded_res = {}
+    for i in res["payload"]["data"]:
+        decoded_res[i["exchangeTimestamp"]] = i["open"]
+    output_data(data=decoded_res, lockfile=pathname)
