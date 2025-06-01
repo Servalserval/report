@@ -128,6 +128,8 @@ class MetadataIntervalTree():
         iv_using_option_file = f"./data/iv_using_option/{fixed_start_time}_{fixed_end_time}.json"
         iv_to_use = load_data(lockfile = iv_using_option_file)
         error_count = 0
+        instrument_success_count = {}
+        instrument_error_count = {}
         for current_time, instrument_name in tqdm.tqdm(iv_to_use.items()):
             try:
                 if instrument_name not in self.option_price_dict.keys():
@@ -151,9 +153,15 @@ class MetadataIntervalTree():
                 )
                 self.implied_vol_dict[current_time] = imp_vol
                 # real_vol = realized_vol()
+                if instrument_name not in instrument_success_count.keys():
+                    instrument_success_count[instrument_name] = 0
+                instrument_success_count[instrument_name] += 1
             except Exception as e:
                 print(f"Error : instrument name : {instrument_name}, current time : {current_time}, error : {e}, traceback : {traceback.format_exc()}")
                 error_count += 1
+                if instrument_name not in instrument_error_count.keys():
+                    instrument_error_count[instrument_name] = 0
+                instrument_error_count[instrument_name] += 1
 
         print("Error count : ", error_count)
         check_os_list(filedir="data/implied_vol_list", filename=f"{fixed_start_time}_{fixed_end_time}.json")
