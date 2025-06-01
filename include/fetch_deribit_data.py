@@ -1,5 +1,4 @@
-from utils.send_request import *
-from utils.output_data import output_data
+from utils import *
 from keys.amberdata import *
 import json
 import traceback
@@ -60,9 +59,26 @@ async def fetch_deribit_history_options_ohlcv(instrument_info, fetch_data_length
     fetch_data_length : The amount of seconds needed for the data range.
     """
     url = f"https://api.amberdata.com/markets/options/ohlcv/{instrument_info['instrument']}"
+    # print(url)
     end_time = instrument_info["endDate"]
-    fetch_data_until = end_time
+    fetch_data_until = end_time - fetch_data_length * 1000
+    if fetch_data_until < instrument_info["startDate"]:
+        fetch_data_until = instrument_info["startDate"]
     params = {
         "exchange" : "deribit",
-        "includeInactive" : True
+        "startDate" : fetch_data_until,
+        "endDate" : end_time,
+        "timeInterval" : "minutes",
+        "timeFormat" : "milliseconds"
     }
+    # print(params)
+    res = await async_send_request(
+        url = url,
+        method = "get",
+        headers = headers,
+        params = params
+    )
+
+    expire_time_in_readable_format = instrument_info["instrument"].split("-")[1]
+    pathname = f"data/deribit_ohlcv/{expire_time_in_readable_format}/{instrument_info['instrument_name']}.json"
+    output_data(data=res, lockfile=pathname)

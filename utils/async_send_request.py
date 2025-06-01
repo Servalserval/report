@@ -5,7 +5,7 @@ async def async_send_request(url, method, json = None, headers = None, params = 
     try:
         async with aiohttp.ClientSession() as session:
             if method == "get":
-                async with session.get(url = url, params=params, timeout=timeout, json = json) as response:
+                async with session.get(url = url, params=params, timeout=timeout, json = json, headers = headers) as response:
                     if print_res:
                         print(f"Response status: {response.status}")
                         print(f"Response headers: {response.headers}")
