@@ -2,8 +2,8 @@ from include import *
 from utils import *
 
 # Config
-START_TIME = 1704038400 * 1000
-END_TIME = 1706716800 * 1000
+START_TIME = 1735660800 * 1000
+END_TIME = 1738339200 * 1000
 FILE_NAME = "BTC"
 
 """
