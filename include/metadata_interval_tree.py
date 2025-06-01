@@ -123,59 +123,43 @@ class MetadataIntervalTree():
         file_path = f"./data/deribit_data/{human_readable_time_format}/{instrument_name}.json"
         res = load_data(lockfile = file_path)
         self.option_price_dict[instrument_name] = {}
-        for i in res["payload"]["data"]:
-            self.option_price_dict[instrument_name][int(i["exchangeTimestamp"])] = i["open"]
+        for ohlcv_time, open_price in res.items():
+            self.option_price_dict[instrument_name][int(ohlcv_time)] = open_price
     
     def calculate_iv(self, start_time, end_time):
         fixed_start_time = int(int(start_time / REFERENCE_PRICE_INTERVAL) * REFERENCE_PRICE_INTERVAL + REFERENCE_PRICE_INTERVAL)
         fixed_end_time = int(int(end_time / REFERENCE_PRICE_INTERVAL) * REFERENCE_PRICE_INTERVAL)
         iv_using_option_file = f"./data/iv_using_option/{fixed_start_time}_{fixed_end_time}.json"
-        plus_1_iv_using_option_file = f"./data/iv_plus_1_using_option/{fixed_start_time}_{fixed_end_time}.json"
-        minus_1_iv_using_option_file = f"./data/iv_minus_1_using_option/{fixed_start_time}_{fixed_end_time}.json"
         iv_to_use = load_data(lockfile = iv_using_option_file)
-        iv_plus_1 = load_data(lockfile = plus_1_iv_using_option_file)
-        iv_minus_1 = load_data(lockfile = minus_1_iv_using_option_file)
         error_count = 0
 
-        iv_plus_1_count = 0
-        iv_minus_1_count = 0
-
-        for current_time, instrument_name in tqdm.tqdm(iv_to_use.items()):
+        for current_time, instrument_name_list in tqdm.tqdm(iv_to_use.items()):
             try:
+                time_to_expiration_dict = {}
                 current_price = self.reference_price[int(current_time)]
-
-                if instrument_name not in self.option_price_dict.keys():
-                    self.load_option_price_data_file(instrument_name=instrument_name)
-
-                if int(current_time) in self.option_price_dict[instrument_name].keys():
-                    option_market_price = self.option_price_dict[instrument_name][int(current_time)] * current_price
+                for instrument_name in instrument_name_list:
+                    time_to_expiration_dict[instrument_name] = int(self.option_dict[instrument_name]["endDate"]) - int(current_time)
                 
-                else:
-                    instrument_name = iv_plus_1[current_time]
+                sorted_dict = dict(sorted(time_to_expiration_dict.items(), key=lambda item: item[1]))
+
+                found_price_flag = False
+                for instrument_name, time_to_expiration in sorted_dict.items():
                     if instrument_name not in self.option_price_dict.keys():
                         self.load_option_price_data_file(instrument_name=instrument_name)
 
                     if int(current_time) in self.option_price_dict[instrument_name].keys():
                         option_market_price = self.option_price_dict[instrument_name][int(current_time)] * current_price
-                        iv_plus_1_count += 1
-                    
-                    else:
-                        instrument_name = iv_minus_1[current_time]
-                        if instrument_name not in self.option_price_dict.keys():
-                            self.load_option_price_data_file(instrument_name=instrument_name)
-
-                        if int(current_time) in self.option_price_dict[instrument_name].keys():
-                            option_market_price = self.option_price_dict[instrument_name][int(current_time)] * current_price
-                            iv_minus_1_count += 1
-                        else:
-                            error_count += 1
-
-                        continue
+                        found_price_flag = True
+                        break
                 
+                if not found_price_flag:
+                    error_count += 1
+                    continue
+
                 option_type = "call" if instrument_name.split("-")[3] == "C" else "put"
                 
                 strike_price = int(instrument_name.split("-")[2])
-                time_to_expiration = (int(self.option_dict[instrument_name]["endDate"]) - int(current_time)) / (86400 * 1000 * 365)
+                time_to_expiration /= (86400 * 1000 * 365)
                 no_risk_rate = 0
                 dividend_rate = 0
                 
@@ -196,8 +180,6 @@ class MetadataIntervalTree():
                 error_count += 1
 
         print("Error count : ", error_count)
-        print("Plus 1 count : ", iv_plus_1_count)
-        print("Minus 1 count : ", iv_minus_1_count)
         check_os_list(filedir="data/implied_vol_list", filename=f"{fixed_start_time}_{fixed_end_time}.json")
         output_data(data=self.implied_vol_dict, lockfile = f"data/implied_vol_list/{fixed_start_time}_{fixed_end_time}.json")
     
