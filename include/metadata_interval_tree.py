@@ -4,6 +4,7 @@ from intervaltree import Interval, IntervalTree
 from include.fetch_deribit_data import *
 import tqdm
 import time
+from include.black_scholes import *
 
 REFERENCE_PRICE_INTERVAL = 300 * 1000
 LARGE_INT = 2 ** 64
@@ -19,6 +20,7 @@ class MetadataIntervalTree():
 
         self.option_price_dict = {}
         self.option_referencing_dict = {}
+        self.implied_vol_dict = {}
     
     def add_from_file(self, file_name):
         """
@@ -85,6 +87,7 @@ class MetadataIntervalTree():
                         closest_price_instrument = j
 
 # TODO : implement the part that we need something other than ATM options
+# Not too slow, so don't try to improve time complexity.
             if to_reference_diff != 0:
                 pass
             
@@ -100,14 +103,56 @@ class MetadataIntervalTree():
                 asyncio.get_event_loop().run_until_complete(fetch_deribit_history_options_ohlcv(instrument_info = self.option_dict[instrument_name], fetch_data_length = 86400 * 3 * 1000))
                 newly_fetched_num += 1
                 time.sleep(0.25)
+
+# TODO Add put version
         
         check_os_list(filedir="data/iv_using_option", filename=f"{fixed_start_time}_{fixed_end_time}.json")
         output_data(data = self.option_referencing_dict, lockfile = f"./data/iv_using_option/{fixed_start_time}_{fixed_end_time}.json")
         print("Fetch instrument : ", total_needed_instrument_list)
         print("Newly fetched : ", newly_fetched_num)
     
-    def calculate_iv(self, start_time, end_time, max_expiration, min_expiration, to_reference_diff, line_name):
-        pass
+    def load_option_price_data_file(self, instrument_name):
+        human_readable_time_format = instrument_name.split("-")[1]
+        file_path = f"./data/deribit_data/{human_readable_time_format}/{instrument_name}.json"
+        res = load_data(lockfile = file_path)
+        self.option_price_dict[instrument_name] = {}
+        for i in res["payload"]["data"]:
+            self.option_price_dict[instrument_name][int(i["exchangeTimestamp"])] = i["open"]
+    
+    def calculate_iv(self, start_time, end_time):
+        fixed_start_time = int(int(start_time / REFERENCE_PRICE_INTERVAL) * REFERENCE_PRICE_INTERVAL + REFERENCE_PRICE_INTERVAL)
+        fixed_end_time = int(int(end_time / REFERENCE_PRICE_INTERVAL) * REFERENCE_PRICE_INTERVAL)
+        iv_using_option_file = f"./data/iv_using_option/{fixed_start_time}_{fixed_end_time}.json"
+        iv_to_use = load_data(lockfile = iv_using_option_file)
+        for current_time, instrument_name in tqdm.tqdm(iv_to_use.items()):
+            if instrument_name not in self.option_price_dict.keys():
+                self.load_option_price_data_file(instrument_name=instrument_name)
+            
+            option_type = "call" if instrument_name.split("-")[3] == "C" else "put"
+            current_price = self.reference_price[int(current_time)]
+            strike_price = int(instrument_name.split("-")[2])
+            time_to_expiration = (int(self.option_dict[instrument_name]["endDate"]) - int(current_time)) / (86400 * 1000 * 365)
+            no_risk_rate = 0
+            dividend_rate = 0
+            option_market_price = self.option_price_dict[instrument_name][int(current_time)] * current_price
+            imp_vol = implied_vol(
+                option_type = option_type,
+                S = current_price,
+                K = strike_price,
+                T = time_to_expiration,
+                r = no_risk_rate,
+                market_price = option_market_price,
+                q = dividend_rate
+            )
+            self.implied_vol_dict[current_time] = imp_vol
+
+        check_os_list(filedir="data/implied_vol_list", filename=f"{fixed_start_time}_{fixed_end_time}.json")
+        output_data(data=self.implied_vol_dict, lockfile = f"data/implied_vol_list/{fixed_start_time}_{fixed_end_time}.json")
+
+
+                
+                
+
 
 
 

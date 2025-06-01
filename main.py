@@ -44,3 +44,7 @@ if __name__ == "__main__":
     if conf == "fetch_unfetched_data_in_time_range":
         iv_calculator = IVCalculator()
         iv_calculator.fetch_unfetched_data()
+    
+    if conf == "calculate_iv":
+        iv_calculator = IVCalculator()
+        iv_calculator.calculate_iv()

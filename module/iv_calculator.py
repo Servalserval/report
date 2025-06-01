@@ -27,3 +27,6 @@ class IVCalculator():
     
     def fetch_unfetched_data(self):
         self.tree.fetch_unfetched_data_in_time_range(start_time = START_TIME, end_time = END_TIME, max_expiration = LINE_1["max_expiration_range"], min_expiration = LINE_1["min_expiration_range"], to_reference_diff = LINE_1["to_reference_diff"], line_name = "line_1")
+    
+    def calculate_iv(self):
+        self.tree.calculate_iv(start_time=START_TIME, end_time=END_TIME)
