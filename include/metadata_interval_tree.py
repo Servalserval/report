@@ -5,6 +5,7 @@ from include.fetch_deribit_data import *
 import tqdm
 import time
 from include.black_scholes import *
+from include.realized_volatility import *
 
 REFERENCE_PRICE_INTERVAL = 300 * 1000
 LARGE_INT = 2 ** 64
@@ -175,7 +176,8 @@ class MetadataIntervalTree():
                     q = dividend_rate
                 )
                 self.implied_vol_dict[current_time] = imp_vol
-                # real_vol = realized_vol()
+                real_vol = realized_volatility(price_dict = self.reference_price)
+                self.realized_vol_dict[current_time] = real_vol
 
             except Exception as e:
                 print(f"Error : instrument name : {instrument_name}, current time : {current_time}, error : {e}, traceback : {traceback.format_exc()}")
@@ -186,6 +188,8 @@ class MetadataIntervalTree():
         output_data(data=self.implied_vol_dict, lockfile = f"data/implied_vol_list/{fixed_start_time}_{fixed_end_time}.json")
         check_os_list(filedir="data/time_to_expiration", filename=f"{fixed_start_time}_{fixed_end_time}.json")
         output_data(data=used_data_time_to_expiration_dict, lockfile = f"data/time_to_expiration/{fixed_start_time}_{fixed_end_time}.json")
+        check_os_list(filedir="data/realized_vol_list", filename=f"{fixed_start_time}_{fixed_end_time}.json")
+        output_data(data=self.realized_vol_dict, lockfile = f"data/realized_vol_list/{fixed_start_time}_{fixed_end_time}.json")
     
 
                 
