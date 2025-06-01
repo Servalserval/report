@@ -61,9 +61,9 @@ async def fetch_deribit_history_options_ohlcv(instrument_info, fetch_data_length
     url = f"https://api.amberdata.com/markets/options/ohlcv/{instrument_info['instrument']}"
     # print(url)
     end_time = instrument_info["endDate"]
-    fetch_data_until = end_time - fetch_data_length * 1000
-    if fetch_data_until < instrument_info["startDate"]:
-        fetch_data_until = instrument_info["startDate"]
+    # fetch_data_until = end_time - fetch_data_length * 1000
+    # if fetch_data_until < instrument_info["startDate"]:
+    fetch_data_until = instrument_info["startDate"]
     params = {
         "exchange" : "deribit",
         "startDate" : fetch_data_until,

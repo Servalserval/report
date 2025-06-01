@@ -11,7 +11,7 @@ max expiration : time until expiration. Choose the one which is closest but larg
 to reference diff : for example, 0 denotes the one closest to ATM, +1 denotes the one higher than ATM, -1 denotes the one lower than ATM
 """
 LINE_1 = {
-    "max_expiration_range" : 86400 * 1000 * 2,
+    "max_expiration_range" : 86400 * 1000 * 3,
     "min_expiration_range" : 0,
     "to_reference_diff" : 0
 }
