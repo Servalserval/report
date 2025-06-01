@@ -87,10 +87,10 @@ class MetadataIntervalTree():
             if to_reference_diff != 0:
                 pass
             
-            total_needed_instrument_list.append(closest_price_instrument)
+            if closest_price_instrument not in total_needed_instrument_list:
+                total_needed_instrument_list.append(closest_price_instrument)
             self.option_referencing_dict[current_time] = closest_price_instrument
         
-        tasks = []
         for instrument_name in tqdm.tqdm(total_needed_instrument_list):
             file_dir_name = instrument_name.split("-")[1]
             file_existance = check_os_list(filedir = f"data/deribit_data/{file_dir_name}", filename = f"{instrument_name}.json")
