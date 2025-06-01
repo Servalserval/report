@@ -58,7 +58,7 @@ class MetadataIntervalTree():
         current_instrument_list = []
         current_instrument_dict = {}
         total_needed_instrument_list = []
-        for i in tqdm.tqdm(range(int((fixed_end_time - fixed_start_time) / REFERENCE_PRICE_INTERVAL / 1000))):
+        for i in tqdm.tqdm(range(int((fixed_end_time - fixed_start_time) / REFERENCE_PRICE_INTERVAL))):
             current_time = int(fixed_start_time + i * REFERENCE_PRICE_INTERVAL)
             # If too slow, try to fix this part
             current_instrument_list = self.query_specific_time(timestamp = current_time)
