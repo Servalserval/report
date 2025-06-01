@@ -164,6 +164,8 @@ class MetadataIntervalTree():
                 instrument_error_count[instrument_name] += 1
 
         print("Error count : ", error_count)
+        print("Instrument success dict : ", instrument_success_count)
+        print("Instrument error dict : ", instrument_error_count)
         check_os_list(filedir="data/implied_vol_list", filename=f"{fixed_start_time}_{fixed_end_time}.json")
         output_data(data=self.implied_vol_dict, lockfile = f"data/implied_vol_list/{fixed_start_time}_{fixed_end_time}.json")
     
