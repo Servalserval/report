@@ -179,15 +179,45 @@ class MetadataIntervalTree():
         fixed_start_time = int(int(start_time / REFERENCE_PRICE_INTERVAL) * REFERENCE_PRICE_INTERVAL + REFERENCE_PRICE_INTERVAL)
         fixed_end_time = int(int(end_time / REFERENCE_PRICE_INTERVAL) * REFERENCE_PRICE_INTERVAL)
         iv_using_option_file = f"./data/iv_using_option/{fixed_start_time}_{fixed_end_time}.json"
+        plus_1_iv_using_option_file = f"./data/iv_plus_1_using_option/{fixed_start_time}_{fixed_end_time}.json"
+        minus_1_iv_using_option_file = f"./data/iv_minus_1_using_option/{fixed_start_time}_{fixed_end_time}.json"
         iv_to_use = load_data(lockfile = iv_using_option_file)
+        iv_plus_1 = load_data(lockfile = plus_1_iv_using_option_file)
+        iv_minus_1 = load_data(lockfile = minus_1_iv_using_option_file)
         error_count = 0
-        instrument_success_count = {}
-        instrument_error_count = {}
-        try_exist_list = [500, -500, 1000, -1000, 1500, -1500, 2000, -2000, 2500, -2500, 3000, -3000]
+
+        iv_plus_1_count = 0
+        iv_minus_1_count = 0
+
         for current_time, instrument_name in tqdm.tqdm(iv_to_use.items()):
             try:
                 if instrument_name not in self.option_price_dict.keys():
                     self.load_option_price_data_file(instrument_name=instrument_name)
+
+                if int(current_time) in self.option_price_dict[instrument_name].keys():
+                    option_market_price = self.option_price_dict[instrument_name][int(current_time)] * current_price
+                
+                else:
+                    instrument_name = iv_plus_1[current_time]
+                    if instrument_name not in self.option_price_dict.keys():
+                        self.load_option_price_data_file(instrument_name=instrument_name)
+
+                    if int(current_time) in self.option_price_dict[instrument_name].keys():
+                        option_market_price = self.option_price_dict[instrument_name][int(current_time)] * current_price
+                        iv_plus_1_count += 1
+                    
+                    else:
+                        instrument_name = iv_minus_1[current_time]
+                        if instrument_name not in self.option_price_dict.keys():
+                            self.load_option_price_data_file(instrument_name=instrument_name)
+
+                        if int(current_time) in self.option_price_dict[instrument_name].keys():
+                            option_market_price = self.option_price_dict[instrument_name][int(current_time)] * current_price
+                            iv_minus_1_count += 1
+                        else:
+                            error_count += 1
+
+                        continue
                 
                 option_type = "call" if instrument_name.split("-")[3] == "C" else "put"
                 current_price = self.reference_price[int(current_time)]
@@ -195,7 +225,7 @@ class MetadataIntervalTree():
                 time_to_expiration = (int(self.option_dict[instrument_name]["endDate"]) - int(current_time)) / (86400 * 1000 * 365)
                 no_risk_rate = 0
                 dividend_rate = 0
-                option_market_price = self.option_price_dict[instrument_name][int(current_time)] * current_price
+                
                 imp_vol = implied_vol(
                     option_type = option_type,
                     S = current_price,
@@ -207,19 +237,14 @@ class MetadataIntervalTree():
                 )
                 self.implied_vol_dict[current_time] = imp_vol
                 # real_vol = realized_vol()
-                if instrument_name not in instrument_success_count.keys():
-                    instrument_success_count[instrument_name] = 0
-                instrument_success_count[instrument_name] += 1
+
             except Exception as e:
                 print(f"Error : instrument name : {instrument_name}, current time : {current_time}, error : {e}, traceback : {traceback.format_exc()}")
                 error_count += 1
-                if instrument_name not in instrument_error_count.keys():
-                    instrument_error_count[instrument_name] = 0
-                instrument_error_count[instrument_name] += 1
 
         print("Error count : ", error_count)
-        print("Instrument success dict : ", instrument_success_count)
-        print("Instrument error dict : ", instrument_error_count)
+        print("Plus 1 count : ", iv_plus_1_count)
+        print("Minus 1 count : ", iv_minus_1_count)
         check_os_list(filedir="data/implied_vol_list", filename=f"{fixed_start_time}_{fixed_end_time}.json")
         output_data(data=self.implied_vol_dict, lockfile = f"data/implied_vol_list/{fixed_start_time}_{fixed_end_time}.json")
     
