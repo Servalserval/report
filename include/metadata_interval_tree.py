@@ -91,11 +91,13 @@ class MetadataIntervalTree():
 
             expiration_time_instrument_list[current_time] = []
             for j in current_instrument_list:
-                print(j)
                 price = j.split("-")[2]
-                if float(price) == closest_price and j not in total_needed_instrument_list:
-                    total_needed_instrument_list.append(j)
-                expiration_time_instrument_list[current_time].append(j)
+                try:
+                    if float(price) == closest_price and j not in total_needed_instrument_list:
+                        total_needed_instrument_list.append(j)
+                    expiration_time_instrument_list[current_time].append(j)
+                except:
+                    pass
                 
             self.option_referencing_dict[current_time] = expiration_time_instrument_list
         
